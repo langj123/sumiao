@@ -1,0 +1,111 @@
+.entry-header {
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	display:block;
+	height:auto;
+	padding:0;
+	position:relative;
+	width:100%;
+	@media screen and (max-width: $mobile-break) {
+		margin-top: 58px;
+	}
+}
+.title-container {
+	display:block;
+	position: relative;
+	text-align:center;
+	padding: 12.75vw 0 28.75vw;
+	margin: 0 auto;
+	z-index:10;
+	@media screen and (min-width: $x-large-break) {
+		padding: 200px 0;
+	}
+		h1,
+		h2 {
+			color:#fff;
+			font-size:1.95vw;
+			font-weight:200;
+			letter-spacing:6px;
+			line-height:100%;
+			margin: 0;
+			text-transform:uppercase;
+			@media screen and (min-width: $larger-break) {
+				font-size: 22px;
+				margin: 15px 0;
+			}
+			&.title-heavy {
+				display:inline-block;
+				font-size:4.85vw;
+				font-weight:900;
+				letter-spacing:10px;
+				line-height:140%;
+				margin-top:0;
+				position:relative;
+				text-align:center;
+				max-width: 85%;
+				margin-bottom: 0;
+				word-wrap: break-word;
+				@media screen and (min-width: $larger-break) {
+					font-size: 58px;
+				}
+				@media screen and (max-width: $mobile-break) {
+					letter-spacing: 4px;
+					font-size: 8.4vw;
+				}
+				.home & {text-align:right; }
+				.home &:before {
+					content:'';
+					display:block;
+					letter-spacing:15px;
+					opacity:.1;
+					position:absolute;
+					right:0;
+					top:0;
+					width:150%;
+					-webkit-filter:blur(.5px);
+					-ms-filter:blur(.5px);
+					filter:blur(.5px);
+					@media screen and (max-width: $mobile-break) {
+						letter-spacing: 6px;
+					}
+				}
+				.home &:after {
+					content:'';
+					display:block;
+					letter-spacing:15px;
+					opacity:.15;
+					position:absolute;
+					right:0;
+					top:0;
+					width:150%;
+					-webkit-filter:blur(6px);
+					-ms-filter:blur(.5px);
+					filter:blur(6px);
+					@media screen and (max-width: $mobile-break) {
+						letter-spacing: 6px;
+					}
+				}
+			}
+		}
+		h1 {
+			opacity: 0;
+		}
+		h1 a {
+			display: block;
+			background:url('../_img/sumiao-logo.png') center center / 100%;
+			transform: rotateX(90deg);
+			width: 50%;
+			height: 0;
+			padding-bottom: 27.7945%;
+			text-indent: -10000px;
+			margin: 0 auto;
+		}
+		h2 {
+			@media screen and (max-width: $mobile-break) {
+				letter-spacing: .65vw;
+				font-weight: 400;
+				font-size: 2.5vw;
+			}
+		}
+}

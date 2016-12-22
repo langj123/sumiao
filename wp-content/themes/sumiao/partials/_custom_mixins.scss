@@ -1,0 +1,97 @@
+// mixins for repeated tasks
+@mixin align-center($text-align: "") {
+	margin-left: auto;
+	margin-right: auto;
+	@if $text-align == "" {
+		text-align: center;
+	}
+}
+@mixin letter-space($space: 1.75px) {
+	letter-spacing: $space;
+}
+@mixin text-hide() {
+	text-indent: -10000px;
+	font-size: 0;
+	line-height: 0;
+	margin: 0;
+}
+@mixin clear-float() {
+	&:after {
+		content: "";
+		display: table;
+		width: 100%;
+		clear: both;
+	}
+}
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+@mixin drop-shadow($off-x: 0, $off-y: 1.85vw, $blur: 3.4vw, $spread: -1.45vw, $color: #111214, $opac: .45) {
+	@include box-shadow(rgba($color, $opac) $off-x $off-y $blur $spread);
+}
+@mixin center-vert($position: absolute) {
+	position: $position;
+	top: 50%;
+	@include transform(translateY(-50%));
+}
+@mixin part-border($width: 100%, $position: "bottom", $margin: 0, $border-height: 1px, $back-color: white) {
+	&:after {
+		content: "";
+		display: block;
+		position: relative;
+		width: $width;
+		background-color: $back-color;
+		height: $border-height;
+		@if $position == "top" {
+			top: 0;
+			margin-bottom: $margin;
+		}
+		@if $position == "bottom" {
+			bottom: 0;
+			margin-top: $margin;
+		}
+	}
+}
+@mixin font-smooth() {
+	-webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+@mixin flex-group($just-content: flex-start, $a-items: flex-start) {
+	@include display-flex;
+   	@include flex-wrap(wrap);
+   	display: -ms-flexbox;
+   	-ms-flex-wrap: wrap;
+   	align-items: $a-items;
+   	-ms-flex-pack: $just-content;
+   	-ms-justify-content: $just-content;
+   	justify-content: $just-content;
+}
+@mixin button-style() {
+	font-size: 1.1vw;
+	color: $bg-color;
+	display: inline-block;
+	border: none;
+	min-height: 2.3vw;
+	line-height: 2.3vw;
+	filter: none;
+	@include align-center();
+	@include letter-space(.2vw);
+	@include border-radius(2vw);
+	text-transform: uppercase;
+	text-decoration: none !important;
+	@include transition-property(all);
+	@include transition-duration(.4s);
+	text-shadow: none;
+	padding: .7vw 2.75vw;
+	@media screen and (max-width: $micro-mobile-break) {
+		font-size: 4vw;
+		padding: 4vw 5vw;
+		line-height: 4.2vw;
+		@include border-radius(6vw);
+	}
+	@media screen and (min-width: $micro-mobile-break + 1px) and (max-width: $mobile-break) {
+		font-size: 3vw;
+		padding: 3vw 4vw;
+		line-height: 3.2vw;
+		@include border-radius(6vw);
+	}
+}

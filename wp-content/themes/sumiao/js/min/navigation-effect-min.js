@@ -1,0 +1,1 @@
+jQuery(function($){var o=$(".sub-page-wrap"),s=o.offset().top;$(window).scroll(function(){var a=$(window).scrollTop();a>=s?o.addClass("fixed"):o.removeClass("fixed")})});

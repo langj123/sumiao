@@ -1,0 +1,43 @@
+@include keyframes(opacityFade) {
+	0% {
+		opacity: 0;
+		@include transform(translateY(-2.5vw));
+	}
+	100% {
+		opacity: 1;
+		@include transform(translateY(0));
+	}
+}
+@include keyframes(fadeInCont) {
+	0% {
+		opacity: 0;
+		@include transform(translateY(0));
+	}
+	100% {
+		opacity: 1;
+		@include transform(translateY(-2.5vw));
+	}
+}
+@include keyframes(fadeOutCont) {
+	0% {
+		opacity: 1;
+		@include transform(translateY(0));
+	}
+	100% {
+		opacity: 0;
+		overflow: hidden;
+		@include transform(translateY(-2.5vw));
+	}
+}
+@include keyframes(opacityFadePart) {
+	0% {
+		opacity: 0;
+		@include transform(translateY(-2.5vw));
+	}
+	100% {
+		opacity: .4;
+		@include transform(translateY(0));
+	}
+}
+
+

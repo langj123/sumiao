@@ -1,0 +1,97 @@
+a,
+a:before,
+a:after {
+	@include transition-property(background box-shadow transform);
+	@include transition-duration(.3s);
+}
+
+.panel-grid {margin:0 !important; }
+.entry-content {
+	margin-top:20px;
+	@media screen and (max-width: $mobile-break) {
+		margin-top: 0;
+	}
+}
+
+.page-id-46 .mktoButton, 
+a.button, 
+.button {
+	background:#15a67e;
+	@include drop-shadow();
+	color:#fff;
+	display:inline-block;
+	font-size:.85vw;
+	font-weight:900;
+	letter-spacing:2px;
+	line-height:.95vw;
+	padding:1.55vw 2.55vw 1.55vw;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	@media screen and (min-width: $micro-break + 1px) and (max-width: $mobile-break) {
+		font-size: 11px;
+		line-height: 3.6vw;
+		padding: 15px 20px 15px;
+	}
+	@media screen and (max-width: $micro-break) {
+		padding: 15px 25px 15px;
+		font-size: 10px;
+		line-height: 13px;
+	}
+	@media screen and (min-width: $larger-break) {
+		font-size: 11px;
+		padding: 20px 25px;
+	}
+	&:hover,
+	&:active {
+		background:#29c399;
+		@include drop-shadow(0, 15px, 10px, -13px, #111214, .75);
+		-webkit-transform: scale(0.98);
+		-ms-transform: scale(0.98);
+		transform: scale(0.98); }
+	&.rule {
+		border:2px solid #fff;
+	}
+	&.hollow {
+		background:transparent;
+		border:2px solid #fff;
+		box-shadow:none;
+		&:hover,
+		&:active {
+			background:rgba(255,255,255,.9);
+			color:#2c3e46;
+		}
+	}
+	.no-border & {
+		border: none;
+	}
+	.red-bttn & {
+		background: #661011;
+	}
+}
+.so-widget-sow-button .ow-button-base a.ow-button-hover {
+	@extend .button;
+	@include border-radius(0);
+	border: 2px solid $bg-color;
+	padding: 1.55vw 1.9vw 1.55vw;
+	&:hover {
+		border: 2px solid $bg-color;
+	}
+	.no-border & {
+		border: none;
+	}
+	@media screen and (min-width: $micro-break + 1px) and (max-width: $mobile-break) {
+		font-size: 11px;
+		line-height: 3.6vw;
+		padding: 15px 20px 15px;
+	}
+	@media screen and (max-width: $micro-break) {
+		padding: 15px 25px 15px;
+		font-size: 10px;
+		line-height: 13px;
+	}
+	@media screen and (min-width: $larger-break) {
+		font-size: 11px;
+		padding: 20px 25px;
+	}
+}

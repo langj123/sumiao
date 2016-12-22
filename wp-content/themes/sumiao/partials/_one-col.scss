@@ -1,0 +1,21 @@
+.one-col-content {
+	font-family: $second-font;
+	background: $bg-color;
+	width: 65%;
+	margin: 0 auto;
+	padding: 2vw 8vw 5vw;
+	@include transform(translateY(-100px));
+	@include drop-shadow(0, 6.25vw, 3vw, -4.5vw, #111214, .25);
+	@media screen and (max-width: $mobile-break) {
+		width: 90%;
+		@include transform(translateY(-40px));
+	}
+}
+.page-template-page-one-col {
+	article.type-page {
+		background: #f0f0ef;
+	}
+	.title-container {
+		border-bottom: 20px solid $bg-color;
+	}
+}

@@ -1,0 +1,111 @@
+.site-footer {
+	background: #1A2B33;
+	.above_footer_widgets {
+		.widget_black_studio_tinymce {
+			background:url('../_img/getintouch.jpg') center center / cover no-repeat;
+			display:block;
+			padding:8% 5%;
+			text-align:center;
+			h2.widget-title {
+				color:#fff;
+				font-weight:900;
+				font-size: 2.8vw;
+				letter-spacing:6px;
+				line-height:100%;
+				margin:0 0 36px;
+				text-transform:uppercase;
+				@media screen and (max-width: $mobile-break) {
+					font-size: 22px;
+					line-height: 135%;
+					letter-spacing: 6px;
+					padding-top: 10vw;
+				}
+				@media screen and (min-width: $larger-break) {
+					font-size: 32px;
+				}
+			}
+		}
+	}
+	.footer_area {
+		margin:0 auto;
+		max-width:1244px;
+		padding:0 34px;
+		.footer_widgets {
+			display:inline-block;
+			vertical-align:top;
+			width:25%;
+			@media screen and (max-width:959px){width:30%; }
+			@media screen and (max-width:768px){width:35%; }
+			@media screen and (max-width:750px){width:50%; }
+			@media screen and (max-width:550px){width:100%; }
+			h2.widget-title {
+				background:url('../_img/logo-white.png') center center / 125px no-repeat;
+				display:block; height:23px;
+				text-indent:-10000px;
+				width:125px;
+			}
+			p {
+				color:#3b5460;
+				font-size:17px;
+				line-height:165%;
+			}
+			.widget_black_studio_tinymce {
+				img {
+					padding-right: 10px;
+				}
+			}
+		}
+		.footer_nav {
+			display:inline-block;
+			padding:16px 0 70px;
+			vertical-align:top;
+			width:75%;
+			@media screen and (max-width:959px){width:70%; }
+			@media screen and (max-width:768px){width:65%; }
+			@media screen and (max-width:750px){width:50%; }
+			@media screen and (max-width:550px){width:100%; }
+			ul.menu {
+				list-style:none;
+				margin:0;
+				padding:0;
+				-webkit-columns:200px 3;
+				-moz-columns:200px 3;
+				columns:200px 3;
+				li {
+					list-style:none;
+					margin:0;
+					padding:0;
+					-webkit-column-break-inside: avoid;
+					page-break-inside: avoid;
+					break-inside: avoid;
+					a {
+						color:#1fb189;
+						font-size:13px;
+						letter-spacing:2px;
+						line-height:300%;
+						text-decoration:none;
+						text-transform:uppercase;
+						&:hover,
+						&:focus {
+							text-decoration:underline;
+						}
+					}
+					ul.sub-menu {
+						margin:0 0 0;
+						padding:0;
+						li {
+							margin:0 0 0;
+							a {
+								color:#336261;
+								font-size:15px;
+								font-weight:normal;
+								letter-spacing:0;
+								line-height:200%;
+								text-transform:none; }
+						}
+					}
+				}
+			}
+		}
+	}
+}

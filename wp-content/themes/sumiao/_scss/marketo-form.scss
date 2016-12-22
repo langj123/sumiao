@@ -1,0 +1,242 @@
+@import "compass/css3/transition";
+@import "compass/css3/box-shadow";
+@import "compass/css3/transform";
+@import "../partials/variables";
+@import "../partials/custom_mixins";
+@import "compass/css3/animation";
+@import "compass/css3/border-radius";
+@import "compass/css3/images";
+@import "compass/css3/flexbox";
+@import "compass/css3/appearance";
+.page-template-page-marketo-php {
+	.form-wrap {
+		position: relative;
+		@include transform(translateY(-20%));
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: white;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+	}
+}
+// speakers page
+#mktoForm_38 {
+	.page-template-page-marketo-footer & {
+		.mktoFormRow {
+			width: 100%;
+			float: none;
+			margin-right: 0;
+			&:nth-of-type(even) {
+				margin-left: 0;
+			}
+		}
+		.mktoHtmlText {
+			text-align: center;
+			color: #808080;
+		}
+	}
+	.mktoFormRow {
+		width: 45%;
+		margin-right: 5%;
+		float: left;
+		clear: none;
+		&:nth-of-type(even) {
+			margin-left: 5%;
+			margin-right: 0;
+			@media screen and (max-width: $mobile-break) {
+				margin-left: 0;
+			}
+		}
+		@media screen and (max-width: $mobile-break) {
+			width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	.mktoButton {
+		min-width: 200px;
+		margin-top: 3.5vw !important;
+		@media screen and (max-width: $mobile-break) {
+			min-width: auto;
+			padding: 15px 30px !important;
+		}
+	}
+	.mktoFormRow {
+		margin-bottom: 0;
+	}
+}
+#mktoForm_3, .mktoForm {
+	.mktoFormRow {
+		margin-bottom: 0;
+	}
+	width: 100% !important;
+	input {
+		width: 100% !important;
+	}
+	.mktoFormCol {
+		width: 100% !important;
+	}
+	.mktoField {
+		float: none;
+	}
+	select, textarea, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"] {
+		border-radius: 0 !important;
+		height: 4vw !important;
+		min-height: 35px !important;
+		max-height: 40px !important;
+		color: black !important;
+		border-top: none !important;
+		border-left: none !important;
+		border-right: none !important;
+		border-bottom: 1px solid #455a64 !important;
+		font-family: $second-font !important;
+		font-weight: 400 !important;
+		letter-spacing: .1vw !important;
+		&:focus {
+			outline: none;
+		}
+	}
+	button[type="submit"] {
+		@media screen and (max-width:980px){font-size:13px !important; line-height:100% !important; }
+		background: #15a67e !important;
+    	@include drop-shadow(0, 1.85vw, 3.4vw, -1.45vw, rgba(17, 18, 20, 0.45));
+    	color: #fff !important;
+    	display: block !important;
+    	font-size: .85vw !important;
+    	font-weight: 900 !important;
+    	letter-spacing: 2px !important;
+    	line-height: .95vw !important;
+    	padding: 1.55vw 2.55vw 1.55vw !important;
+    	text-align: center !important;
+    	text-decoration: none !important;
+    	text-transform: uppercase !important;
+    	font-family: $second-font !important;
+    	margin: 0 auto !important;
+	}
+	select {
+		width: 100% !important;
+  		-webkit-border-radius: 0 !important;
+	}
+	.mktoFieldWrap {
+		position: relative;
+		width: 100% !important;
+	}
+	label.mktoLabel {
+		color: $green !important;
+		@include letter-space(.2vw);
+		font-weight: 400 !important;
+		width: 100% !important;
+		font-family: $second-font !important;
+		text-transform: uppercase!important;
+		pointer-events: none;
+		line-height: 160%;
+		@include transition-property(all);
+		@include transition-duration(.2s);
+	}
+	/*label.mktoLabel ~ input[type="text"].mktoInvalid, label.mktoLabel ~ input[type="text"].mktoRequired, label.mktoLabel ~  input[type="email"].mktoInvalid,  label.mktoLabel ~  input[type="email"].mktoRequired, label.mktoLabel ~  input[type="url"].mktoInvalid, label.mktoLabel ~  input[type="url"].mktoRequired, label.mktoLabel ~  input[type="password"].mktoInvalid, label.mktoLabel ~  input[type="password"].mktoRequired, label.mktoLabel ~  input[type="search"].mktoInvalid, label.mktoLabel ~  input[type="search"].mktoRequired, label.mktoLabel ~  input[type="number"].mktoInvalid, label.mktoLabel ~  input[type="number"].mktoRequired, label.mktoLabel ~  input[type="tel"].mktoInvalid, label.mktoLabel ~  input[type="tel"].mktoRequired {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: transparent;
+		@include transition-property(all);
+		@include transition-duration(.3s);
+	}
+	label.mktoLabel ~ input[type="text"].mktoValid:focus, label.mktoLabel ~  input[type="email"].mktoValid:focus, input[type="email"].mktoRequired.mktoInvalid:focus, label.mktoLabel ~  input[type="url"].mktoValid:focus, label.mktoLabel ~  input[type="password"].mktoValid:focus, label.mktoLabel ~  input[type="search"].mktoValid:focus, label.mktoLabel ~  input[type="number"].mktoValid:focus, label.mktoLabel ~  input[type="tel"].mktoValid:focus {
+		position: relative;
+		margin-top: 10px;
+		@include transform(translateY(0));
+	}
+	label.mktoLabel ~ input[type="text"].mktoValid, label.mktoLabel ~  input[type="email"].mktoValid, label.mktoLabel ~  input[type="url"].mktoValid, label.mktoLabel ~  input[type="password"].mktoValid, label.mktoLabel ~  input[type="search"].mktoValid, label.mktoLabel ~  input[type="number"].mktoValid, label.mktoLabel ~  input[type="tel"].mktoValid {
+		position: relative;
+		margin-top: 10px;
+	}*/
+	select {
+		background: white;
+		border-radius: 0;
+	}
+	select ~ label.mktoLabel {
+		position: relative;
+		top: 0;
+		@include transform(translateY(0));
+	}
+	.mktoHtmlText {
+		width: 100% !important;
+		p {
+			@media screen and (max-width:980px){font-size:12px !important; line-height:120% !important; }
+			color: #808080 !important;
+			text-align: center !important;
+			font-size: 1.1vw !important;
+			line-height: 1.1vw !important;
+			margin-bottom: 2vw !important;
+		}
+	}
+	label[for="emailOptIn"] {
+		.mktoAsterix {
+			display: none;
+		}
+	}
+	.mktoLogicalField {
+		width: 22px !important;
+		height: 22px !important;
+		margin: 0 auto !important;
+		position: relative;
+		input {
+			opacity: 0;
+			width: 100% !important;
+			height: 100% !important;
+			&:checked :before {
+				position: absolute;
+				opacity: 1;
+				display: block;
+				content: "";
+				position: absolute;
+			}
+		}
+
+		label {
+			position: absolute;
+			top: 0;
+			margin: 0 !important;
+			display: block !important;
+			width: 100% !important;
+			height: 100% !important;
+		}
+		input ~ label {
+			&:before {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 100%;
+				border: 1px solid #455a64;
+				background: white;
+				position: absolute;
+			}
+		}
+		input:checked ~ label {
+			&:before {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 100%;
+				background: white url(../_img/check-arrow-01.svg) no-repeat center center;
+				position: absolute;
+			}
+		}
+	}
+	.mktoButtonRow, .mktoButtonWrap  {
+		width: 100% !important;
+	}
+	.mktoButton {
+		@include transition-property(all);
+		@include transition-duration(.3s);
+		&:hover {
+			@include transform(scale(.95));
+		}
+	}
+}

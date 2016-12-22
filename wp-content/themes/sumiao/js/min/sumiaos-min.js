@@ -1,0 +1,1 @@
+jQuery(function($){var e=$(".site-title a"),t=$(".site-title"),r=new TimelineLite;TweenMax.set(e,{transformStyle:"preserve-3d"}),TweenMax.set(t,{transformStyle:"preserve-3d"}),r.fromTo(t,.4,{css:{opacity:0}},{css:{opacity:1}}).fromTo(e,.7,{css:{transform:"rotateX(90deg)"}},{css:{transform:"rotateX(0)"}})});

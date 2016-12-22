@@ -1,0 +1,160 @@
+.sub-page-wrap {
+	background: $blue;
+	margin-bottom: 20px;
+	@media screen and (max-width: $micro-break) {
+		margin-bottom: 0;
+	}
+	&.fixed {
+		@media screen and (min-width: $micro-break) {
+			position: fixed;
+			width: 100%;
+			z-index: 999;
+			top: 58px;
+			left: 0;
+			.sub-page-cont {
+				li a {
+					background-image: none !important;
+					padding: 5px;
+				}
+			}
+			transition:all .25s ease; 
+			&.hidden {top:-200px; }
+		}
+	}
+	.toggle {
+		display: none;
+		@media screen and (max-width: $micro-break) {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+			border: none;
+			background: transparent;
+			color: white;
+			line-height: 45px;
+			text-align: center;
+			&:focus {
+				outline: none;
+			}
+			span {
+				position: relative;
+				display: inline-block;
+				padding: 0 12px;
+				&:after {
+					content: "";
+					position: absolute;
+					right: 0;
+					top: 55%;
+					width: 10px;
+					height: 100%;
+					@include transform(rotate(180deg) translateY(50%));
+					background: url('../_img/block-arrow.png') no-repeat right center;
+					background-size: 100%;
+				}
+			}
+		}
+	}
+	&.expanded {
+		.sub-page-cont {
+			@media screen and (max-width: $micro-break) {
+				display: block;
+			}
+		}
+		p.breadcrumb {
+			@media screen and (max-width: $micro-break) {
+				display: block;
+			}
+		}
+		.toggle {
+			span {
+				&:after {
+					top: 50%;
+					@include transform(rotate(0) translateY(-50%));
+				}
+			}
+		}
+	}
+	.sub-page-cont {
+		margin: 0;
+		padding: 2vw 3vw;
+		list-style-type: none;
+		@include clear-float();
+		@include flex-group(center, inherit);/* moved to inline block display - kb 9/6/16 */
+		@media screen and (max-width: $micro-break) {
+			display: none;
+		}
+		li {
+			width: calc(20% - 2%);
+			margin: 0 1%;
+			text-align: center;
+			&.current-item {
+				a {
+					background-color: #6b8693;
+					color: #2c3e46;
+				}
+			}
+			@media screen and (min-width: $micro-break + 1px) and (max-width: $mobile-break) {
+				width: calc(50% - 2%);
+				margin-bottom: 2vw;
+			}
+			@media screen and (max-width: $micro-break) {
+				width: calc(100% - 2vw);
+				margin: 1vw;
+			}
+			a {
+				display: block;
+				width: 100%;
+				height: 100%;
+				color: $bg-color;
+				text-decoration: none;
+				border-radius: 3px;
+				padding: 5.4vw 1vw 1vw;
+				border: 2px solid #445a64;
+				font-size: 1vw;
+				line-height: 19px;
+				background-size: 5.6vw;
+				background-repeat: no-repeat;
+				background-position: center 1vw;
+				@include drop-shadow();
+				@include transition-property(all);
+				@include transition-duration(.3s);
+				@media screen and (max-width: $mobile-break) {
+					font-size: 15px;
+				}
+				@media screen and (max-width: $micro-break) {
+					padding: 5px 0 5px 55px;
+					background-size: 35px;
+					background-position: 10px center;
+					text-align: left;
+					font-size: 15px;
+				}
+				&:hover {
+					@include drop-shadow(0, .7vw, 1vw, -.3vw);
+					@include transform(scale(.95));
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+	}
+	p.breadcrumb {
+		background: $grey-dark;
+		margin: 0;
+		padding: 0 4vw;
+		text-align: center;
+		@media screen and (max-width: $mobile-break) {
+			padding: 10px 4vw;
+			display: none;
+		}
+		a {
+			color: $bg-color;
+			text-decoration: none;
+			font-size: 1.1vw;
+			line-height: 3.6vw;
+			text-decoration: underline;
+			@media screen and (max-width: $mobile-break) {
+				font-size: 15px;
+			}
+		}
+	}
+}

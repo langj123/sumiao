@@ -1,0 +1,363 @@
+h3.gform_title {
+	text-transform: uppercase;
+	font-size: 3.5vw;
+	margin-bottom: 1.5vw;
+	margin-top: 1.5vw;
+	@media screen and (max-width: $mobile-break) {
+		font-size: 6vw;
+		line-height: 6vw;
+	}
+}
+.gform_description {
+	text-align: center;
+	display: block;
+	margin-bottom: 3vw;
+	font-size: 1.8vw;
+	@media screen and (max-width: $mobile-break) {
+		font-size: 4vw;
+		line-height: 5.5vw;
+		margin: 6vw 0;
+	}
+}
+.confirmation {
+	display: none;
+}
+form {
+	li {
+		list-style-type: none;
+		&:before {
+			display: none;
+		}
+	}
+}
+.gfield {
+	position: relative;
+}
+.gfield_label {
+	@include letter-space(.2vw);
+	text-transform: uppercase;
+	@include transition-property(all);
+	@include transition-duration(.2s);
+	font-size: 1.1vw;
+	@media screen and (max-width: $mobile-break) {
+		font-size: 12px;
+	}
+	.textarea_label & {
+		top: 25px;
+	}
+}
+.ginput_container_textarea ~ .gfield_label {
+	top: 5%;
+}
+.gfield_label.active, .gfield_error .gfield_label {
+	top: 0;
+	font-size: 1.1vw;
+	@include transform(translateY(-.8vw));
+	@media screen and (max-width: $mobile-break) {
+		font-size: 3vw;
+		@include transform(translateY(-2vw));
+	}
+}
+.gform_confirmation_message {
+	color: #000000;
+	font-size: 2vw;
+	text-align: center;
+	border: 1px solid #000000;
+	padding: 2vw;
+	@include border-radius(3px);
+	@media screen and (max-width: $mobile-break) {
+		font-size: 5vw;
+	}
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"] {
+	height: 4vw;
+	min-height: 45px;
+	color: #afacac;
+	@include border-radius(6px);
+	&:focus {
+		outline: none;
+	}
+}
+::placeholder {
+	color: #afacac;
+}
+::-webkit-input-placeholder {
+	color: #afacac;
+}
+::-moz-input-placeholder {
+	color: #afacac;
+}
+::-ms-input-placeholder {
+	color: #afacac;
+}
+textarea {
+	color: #afacac;
+	height: 185px;
+}
+/* Form Styling (Gravity Forms)  */
+.gform_body {
+	.modal & {
+		width: 80%;
+		@media screen and (max-width: $mobile-break) {
+			width: 100%;
+		}
+	}
+}
+.gform_validation_container {
+	visibility: hidden;
+	display: none;
+}
+div.gform_wrapper, .widget_gform_widget {
+	textarea {
+		width: 100%;
+		border: 1px solid #455a64;
+	}
+	.gform_body {
+		margin: 0 auto;
+		@media screen and (max-width: $mobile-break) {
+			margin: 8vw auto;
+		}
+	}
+	.gform_footer {
+		margin: 2vw auto 0;
+		clear: left;
+	}
+	textarea, input[type=text], input[type=url], input[type=email], input[type=tel], input[type=number], .gform_wrapper input[type=password] {
+		border-radius: 0;
+		width: 100%;
+		color: black;
+		@media screen and (max-width: $mobile-break) {
+			font-size: 3.25vw;
+		}
+	}
+	.name_first, .name_last {
+		width: 50%;
+		display: block;
+		float: left;
+	}
+	.ginput_container_name {
+		overflow: hidden;
+	}
+	.gfield_html {
+		text-align: center;
+		color: #808080;
+		font-size: 1vw;
+		@media screen and (max-width: $mobile-break) {
+			font-size: 12px;
+		}
+	}
+	input[type=submit] {
+		@include transition-property(all);
+		@include transition-duration(.3s);
+		@extend .button;
+		border-radius: 0;
+		border: none;
+		display: block;
+		margin: 3vw auto 0;
+	}
+	input[type=text], input[type=url], input[type=email], input[type=tel], input[type=number], .gform_wrapper input[type=password] {
+		border-left: 0;
+		border-right: 0;
+		border-top: 0;
+		border-bottom: 1px solid #455a64;
+	}
+	input[type=file] {
+		border-radius: 0;
+		opacity: 0 !important;
+		min-height: 45px;
+		cursor: pointer;
+		filter: opacity(0);
+	}
+	input[type=file] + .screen-reader-text {
+		width: 100%;
+		height: 100%;
+		outline: aqua;
+	}
+	.gform_fields {
+		label.gfield_label {
+			position: absolute;
+			top: 50%;
+			margin: 0;
+			line-height: 0;
+			font-weight: normal;
+			color: $green;
+			font-family: $second-font;
+		}
+		.value {
+			label.gfield_label {
+				top:5%; 
+			}
+		}
+		.textarea-cont {
+			margin-top: 3.5vw;
+			label.gfield_label {
+				position: relative;
+			}
+		}
+		input.small {
+			width: 35%;
+			@media screen and (max-width: $mobile-break) {
+				width: 100%;
+			}
+		}
+		li {
+			margin-bottom: 2.75vw;
+			padding: 0;
+			@media screen and (max-width: $mobile-break) {
+				margin-bottom: 3.5vw;
+			}
+		}
+	}
+	.textwidget {
+		li {
+			padding-left: 0;
+		}
+	}
+}
+.gform_fields {
+	margin: 0;
+	padding: 0;
+}
+.width-50 {
+	float: left;
+	width: 50%;
+	&:nth-of-type(odd) {
+		clear: left;
+	}
+	@media screen and (max-width: $mobile-break) {
+		width: 100%;
+		float: none;
+	}
+}
+.width-100 {
+	clear: left;
+}
+.ginput_container_fileupload ~ .gfield_label {
+	position: relative;
+}
+
+/* Marketo Contact Form */
+.page-id-46 {
+	.mktoForm {width:100% !important; margin-top: 35px;
+		.mktoButtonRow {width:100% !important;
+			.mktoButtonWrap {display:block; margin:30px auto !important; text-align:center; 
+				button {background:#15a67e !important; border:none; display:inline-block; padding:1.0vw 2.55vw; transition:all .25s ease; }
+			}
+		}
+		.mktoFormRow {float:none; width:100%; margin-bottom: 4vw;
+			.mktoFieldDescriptor {float:none;
+				.mktoOffset {display:none; }
+				.mktoFieldWrap {float:none; position:relative;
+					&.value {
+						label {top:25%; }
+					}
+					.mktoField {
+						float: none;
+					}
+					label { 
+						/*width:100% !important;
+						float:none; 
+						position: absolute;
+						top: 50%;
+						margin: 0;
+						line-height: 0;
+						font-weight: normal ; 
+						color: $green;
+						font-family: $second-font;
+						@include letter-space(.2vw);
+						text-transform: uppercase;
+						@include transition-property(all);
+						@include transition-duration(.2s);
+						font-size: 1.1vw;
+						@media screen and (max-width: $mobile-break) {
+							font-size: 12px;
+						}*/
+
+						.mktoAsterix {color:$green; display:inline-block; float:none;  }
+
+					}
+					select.mktoField {
+						float:none !important; 
+						margin-top:80px;
+						-webkit-appearance:none;
+					}
+					input.mktoField { 
+						/*font-size:16px;
+						height:80px;
+						line-height:100%;
+						padding-top:40px;
+						float:none;
+						width:100% !important;
+						border-left: 0;
+						border-right: 0;
+						border-top: 0;
+						border-bottom: 1px solid #455a64;
+						border-radius: 0;
+						width: 100%;
+						color: black;
+						@media screen and (max-width: $mobile-break) {
+							font-size: 3.25vw;
+						}*/
+						
+					}
+				}
+			}
+			.mktoClear {display:none; }
+		}	
+	}
+	.confirmation {display:none; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+.single.single-resources-library {
+	.entry-title {
+		color: white;
+	}
+	.entry-content {
+		background: #f3f3f3;
+		margin-top: 20px;
+	}
+	.content-area {
+		position: relative;
+		margin-bottom: 20px;
+		@include clear-float();
+	}
+	.form-wrap {
+		@media screen and (max-width:780px){float:none; margin:0 auto; width:90%; }
+		float: right;
+		width: 45%;
+		margin-right: 4vw;
+		@include transform(translateY(-5vw));
+		@include drop-shadow(0, 6.85vw, 3.4vw, -6.45vw, rgba(17, 18, 20, 0.45));
+		@include transition-property(all);
+		@include transition-duration(.3s);
+		opacity: 1;
+		&.submitted {
+			@include animation(fadeOutCont .4s 1 forwards);
+		}
+	}
+	.normal-post {
+		margin:0; 
+	}
+	.gated-content {
+		width: 50%;
+		padding: 0 4vw;
+		float: left;
+		@include animation(fadeInCont .4s 1 forwards);
+		@media screen and (max-width: $mobile-break) {
+			width: 100%;
+			float: none;
+			clear:left;
+			padding-top: 12vw;
+		}
+	}
+}
+.form-wrap {
+	background: white;
+	padding: 3vw 4vw;
+}
