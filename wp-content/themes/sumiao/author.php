@@ -16,7 +16,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<h2>Hello, testing</h2>
+			<h2>Hello, testing again</h2>
 		<?php
 		 	get_template_part('template-parts/content', 'author-archive');
 		 ?>
