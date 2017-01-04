@@ -54,7 +54,7 @@ if (function_exists('get_field') && is_array(get_field('mobile_header_image', ge
 		.entry-header {
 			background-image: url(<?php echo $bgimage; ?>);
 		}
-		@media screen and (max-width: 400px) {
+		@media screen and (max-width: 600px) {
 			.entry-header {
 				background-image: url(<?php echo $mobile_img['url'] ?>);
 			}

@@ -372,10 +372,13 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
-  height: auto;
-  padding: 0;
+  height: 0;
+  padding: 0 0 74.44%;
   position: relative;
   width: 100%; }
+  @media screen and (max-width: 600px) {
+    .entry-header {
+      padding: 0 0 180.18%; } }
   .entry-header address {
     color: white;
     font-style: normal;
@@ -428,12 +431,9 @@ h6 {
   display: block;
   position: relative;
   text-align: center;
-  padding: 10.75vw 0 10.75vw;
+  padding: 5vw 0;
   margin: 0 auto;
   z-index: 10; }
-  @media screen and (min-width: 601px) and (max-width: 780px) {
-    .title-container {
-      padding: 35vw 0; } }
   @media screen and (max-width: 600px) {
     .title-container {
       padding: 56vw 0; } }
@@ -463,10 +463,10 @@ h6 {
     padding-bottom: 300px;
     text-indent: -10000px;
     margin: 0 auto; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 780px) {
       .title-container h1 a {
-        width: 285px;
-        padding-bottom: 162.85px; } }
+        width: 65%;
+        padding-bottom: 37%; } }
   @media screen and (max-width: 780px) {
     .title-container h2 {
       letter-spacing: .65vw;
