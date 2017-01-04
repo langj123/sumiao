@@ -1,7 +1,17 @@
-@include keyframes(bgShift) {
-	to {
-		opacity: 1;
-		background-position-x: -1095.37vw;
+@media screen and (min-width: $mobile-break + 1px) {
+	@include keyframes(bgShift) {
+		to {
+			opacity: 1;
+			background-position-x: -1095.37vw;
+		}
+	}
+}
+@media screen and (max-width: $mobile-break) {
+	@include keyframes(bgShift) {
+		to {
+			opacity: 1;
+			background-position-x: -2190.74vw;
+		}
 	}
 }
 @include keyframes(opacityFade) {

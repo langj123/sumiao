@@ -12,13 +12,25 @@
 		font-style: normal;
 		font-family: $third-font;
 		margin: 4vw 0 6vw;
+		opacity: 0;
 		letter-spacing: 4px;
 		font-size: 15px;
+		-moz-transform: translateY(-50px);
+		-webkit-transform: translateY(-50px);
+		transform: translateY(-50px);
+		@media screen and (max-width: $mobile-break) {
+			font-size: 11px;
+			letter-spacing: 2px;
+		}
 	}
 }
 .social-links {
 	padding: 0;
 	margin: 0;
+	opacity: 0;
+	-moz-transform: translateY(-50px);
+	-webkit-transform: translateY(-50px);
+	transform: translateY(-50px);
 	li {
 		color: white;
 		display: inline-block;
@@ -56,8 +68,11 @@
 	padding: 10.75vw 0 10.75vw;
 	margin: 0 auto;
 	z-index:10;
-	@media screen and (min-width: $x-large-break) {
-		padding: 200px 0;
+	@media screen and (min-width: $small-break + 1px) and (max-width: $mobile-break) {
+		padding: 35vw 0;
+	}
+	@media screen and (max-width: $small-break) {
+		padding: 56vw 0;
 	}
 		h1,
 		h2 {
@@ -72,69 +87,23 @@
 				font-size: 22px;
 				margin: 15px 0;
 			}
-			&.title-heavy {
-				display:inline-block;
-				font-size:4.85vw;
-				font-weight:900;
-				letter-spacing:10px;
-				line-height:140%;
-				margin-top:0;
-				position:relative;
-				text-align:center;
-				max-width: 85%;
-				margin-bottom: 0;
-				word-wrap: break-word;
-				@media screen and (min-width: $larger-break) {
-					font-size: 58px;
-				}
-				@media screen and (max-width: $mobile-break) {
-					letter-spacing: 4px;
-					font-size: 8.4vw;
-				}
-				.home & {text-align:right; }
-				.home &:before {
-					content:'';
-					display:block;
-					letter-spacing:15px;
-					opacity:.1;
-					position:absolute;
-					right:0;
-					top:0;
-					width:150%;
-					-webkit-filter:blur(.5px);
-					-ms-filter:blur(.5px);
-					filter:blur(.5px);
-					@media screen and (max-width: $mobile-break) {
-						letter-spacing: 6px;
-					}
-				}
-				.home &:after {
-					content:'';
-					display:block;
-					letter-spacing:15px;
-					opacity:.15;
-					position:absolute;
-					right:0;
-					top:0;
-					width:150%;
-					-webkit-filter:blur(6px);
-					-ms-filter:blur(.5px);
-					filter:blur(6px);
-					@media screen and (max-width: $mobile-break) {
-						letter-spacing: 6px;
-					}
-				}
-			}
 		}
 		h1 a {
 			display: block;
 			background:url('../_img/sumiao-logo.svg') center center / 100%;
-			/*transform: rotateX(90deg);*/
 			width: 525px;
 			height: 0;
+			opacity: 0;
+			-moz-transform: translateY(-150px);
+			-webkit-transform: translateY(-150px);
+			transform: translateY(-150px);
 			padding-bottom: 300px;
 			text-indent: -10000px;
 			margin: 0 auto;
+			@media screen and (max-width: $small-break) {
+				width: 285px;
+				padding-bottom: 162.85px;
+			}
 		}
 		h2 {
 			@media screen and (max-width: $mobile-break) {

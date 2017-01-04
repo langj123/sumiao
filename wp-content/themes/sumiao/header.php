@@ -14,7 +14,10 @@ $post_thumb = get_post_thumbnail_id(get_the_ID());
 if($post_thumb > 0){
 	$post_thumb = wp_get_attachment_image_src($post_thumb,$img_size);
 }
-$bgimage = !empty($post_thumb[0]) ? 'style="background-image:url('.$post_thumb[0].');"' : "";
+$bgimage = !empty($post_thumb[0]) ? $post_thumb[0] : false;
+if (function_exists('get_field') && is_array(get_field('mobile_header_image', get_the_ID()))) {
+	$mobile_img = get_field('mobile_header_image', get_the_ID());
+}
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -46,11 +49,23 @@ $bgimage = !empty($post_thumb[0]) ? 'style="background-image:url('.$post_thumb[0
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<?php if (isset($bgimage) || isset($mobile_img)) { ?>
+	<style>
+		.entry-header {
+			background-image: url(<?php echo $bgimage; ?>);
+		}
+		@media screen and (max-width: 400px) {
+			.entry-header {
+				background-image: url(<?php echo $mobile_img['url'] ?>);
+			}
+		}
+	</style>
+<?php } ?>
 </head>
 
 <body <?php body_class(); ?>><?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
 <div id="page" class="site">
-	<header class="entry-header" <?php print $bgimage; ?>>
+	<header class="entry-header">
 		<div class="title-container">
 			<?php
 			if ( is_front_page() || is_home() ) { ?>
@@ -60,11 +75,12 @@ $bgimage = !empty($post_thumb[0]) ? 'style="background-image:url('.$post_thumb[0
 					$frontId = get_option('page_on_front');
 					$address = get_field('header_address', $frontId) != '' ? get_field('header_address', $frontId) : false;
 					$social = array();
-					$fb = get_field_object('facebook_link', $frontId) != '' ? array_push($social, get_field_object('facebook_link', $frontId)) : false;
-					$twit = get_field_object('twitter_link', $frontId) != '' ? array_push($social, get_field_object('twitter_link', $frontId)) : false;
-					$inst = get_field_object('instagram_link', $frontId) != '' ? array_push($social, get_field_object('instagram_link', $frontId)) : false;
+					$fb = get_field_object('facebook_link', $frontId)['value'] != '' ? array_push($social, get_field_object('facebook_link', $frontId)) : false;
+					$twit = get_field_object('twitter_link', $frontId)['value'] != '' ? array_push($social, get_field_object('twitter_link', $frontId)) : false;
+					$inst = get_field_object('instagram_link', $frontId)['value'] != '' ? array_push($social, get_field_object('instagram_link', $frontId)) : false;
 					$html = '';
 					$html .= $address != false ? '<address>' . $address . '</address>' : '';
+
 
 					if (sizeof($social) > 0) {
 						$html .= '<ul class="social-links">';

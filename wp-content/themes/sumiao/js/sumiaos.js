@@ -1,6 +1,8 @@
 jQuery(function($) {
   var logo = $('.site-title a'),
       title = $('.site-title'),
+      address = $('.title-container address'),
+      social = $('.title-container .social-links'),
       tl = new TimelineLite(),
       wMark = document.getElementsByClassName('watermark'),
       wMPos = wMark[0].offsetTop,
@@ -19,11 +21,10 @@ jQuery(function($) {
   			$(wMark[0]).addClass('animate');
   		}
   	}
-  // TweenMax.set(logo, {transformStyle: "preserve-3d"} );
-  // TweenMax.set(title, {transformStyle: "preserve-3d"} );
-
-  // tl.fromTo(title, .2, {css: {opacity: 0}}, {css: {opacity: 1}})
-  //   .fromTo(logo, .3, {css:{ transform: "rotateX(90deg)" }}, {css: {transform:"rotateX(0)" }});
+  // header animations
+  tl.to(logo, .3, {css: {transform: "translateY(0)", opacity: 1}})
+    .to(address, .3, {css: {opacity: 1, transform: "translateY(0)" }})
+    .to(social, .3, {css: {opacity: 1, transform: "translateY(0)"}});
 
 
 });

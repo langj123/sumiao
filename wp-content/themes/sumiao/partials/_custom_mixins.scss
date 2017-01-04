@@ -56,6 +56,10 @@
 			margin-left: auto;
 			margin-right: 0;
 		}
+		@if $centered == "left" {
+			margin-left: 0;
+			margin-right: auto;
+		}
 	}
 }
 @mixin font-smooth() {

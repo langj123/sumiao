@@ -52,6 +52,11 @@
 			height: 100%;
 			opacity: 0;
 			background: url("../_img/watercolor-sumiaos-animation-v6.png") no-repeat 0 0 / 1143vw; /* 14448px was the original */
+			pointer-events: none;
+			@media screen and (max-width: $mobile-break) {
+				width: 97%;
+				background: url("../_img/watercolor-sumiaos-animation-v6.png") no-repeat 0 0 / 2286vw; /* 14448px was the original */
+			}
 		}
 	}
 	&.animate {
@@ -87,6 +92,10 @@ h3.widget-title {
 		font-size: 40px;
 		line-height: 48px;
 		@include part-border(55px, "bottom", 20px, 4px, $yellow, "right");
+		@media screen and (max-width: $mobile-break) {
+			text-align: left;
+			@include part-border(55px, "bottom", 20px, 4px, $yellow, "left");
+		}
 	}
 }
 .sow-slider-image-wrapper {
