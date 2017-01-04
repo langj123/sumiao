@@ -7,15 +7,53 @@
 	padding:0;
 	position:relative;
 	width:100%;
-	@media screen and (max-width: $mobile-break) {
-		margin-top: 58px;
+	address {
+		color: white;
+		font-style: normal;
+		font-family: $third-font;
+		margin: 4vw 0 6vw;
+		letter-spacing: 4px;
+		font-size: 15px;
+	}
+}
+.social-links {
+	padding: 0;
+	margin: 0;
+	li {
+		color: white;
+		display: inline-block;
+		margin: 0 20px;
+		a {
+			border: 2px solid #00ceb3;
+			border-radius: 100%;
+			font-size: 0;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			display: inline-block;
+			color: white;
+			text-decoration: none;
+			font-family: "socicon";
+			&:hover {
+				background: white;
+				border: 2px solid white;
+				&:before {
+					color: #00ceb3;
+				}
+			}
+		}
+	}
+	[class^="socicon-"]:before, [class*=" socicon-"]:before {
+		font-size: 19px;
+		line-height: 40px;
+		display: inline-block;
 	}
 }
 .title-container {
 	display:block;
 	position: relative;
 	text-align:center;
-	padding: 12.75vw 0 28.75vw;
+	padding: 10.75vw 0 10.75vw;
 	margin: 0 auto;
 	z-index:10;
 	@media screen and (min-width: $x-large-break) {
@@ -88,16 +126,13 @@
 				}
 			}
 		}
-		h1 {
-			opacity: 0;
-		}
 		h1 a {
 			display: block;
-			background:url('../_img/sumiao-logo.png') center center / 100%;
-			transform: rotateX(90deg);
-			width: 50%;
+			background:url('../_img/sumiao-logo.svg') center center / 100%;
+			/*transform: rotateX(90deg);*/
+			width: 525px;
 			height: 0;
-			padding-bottom: 27.7945%;
+			padding-bottom: 300px;
 			text-indent: -10000px;
 			margin: 0 auto;
 		}

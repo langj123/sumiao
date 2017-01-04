@@ -208,24 +208,21 @@ function sumiaos_get_events($args){
         	$title = $event_query->posts[$y]->post_title;
         	$id = $event_query->posts[$y]->slug;
         	$content = apply_filters( 'the_content', $event_query->posts[$y]->post_content);
-        	$post_thumb = get_post_thumbnail_id($postId);
-			if($post_thumb > 0){
-				$post_thumb = wp_get_attachment_image_src($post_thumb,'event_thum');
-			}
+        	$post_thumb = get_the_post_thumbnail($postId, 'event_thumb');
 
         	if (function_exists('get_field')){
         		$date = get_field('event_date', $postId);
+        		$day = date('l', strtotime($date));
         		$enddate = get_field('event_end_date', $postId);
         		$endDate = !empty($enddate) ? get_field('event_end_date', $postId) : '';
         		$dateStamp = strtotime($date);
-        		$location = get_field('event_location', $postId);
         		$website = get_field('event_website', $postId);
-        		$bgimage = !empty($post_thumb[0]) ? 'style="background-image:url('.$post_thumb[0].');"' : "";
-        		
+        		$click_text = get_field('click_thru_text', $postId);
+
         		if($endDate != ''){
 	        		$startdateraw = strtotime($date);
 	        		$enddateraw = strtotime($endDate);
-	        		
+
 	        		if(date('Y',$startdateraw) == date('Y',$enddateraw)){
 		        		//same year
 		        		if(date('F',$startdateraw) == date('F',$enddateraw)){
@@ -241,14 +238,16 @@ function sumiaos_get_events($args){
 	        		}
         		}
         	}
-           	$contStand .= '<div class="event-cont" ' . $bgimage . '>';
+           	$contStand .= '<div class="event-cont">';
+           	$contStand .= '<div class="event-photo">';
+           	$contStand .= $post_thumb;
+           	$contStand .= '</div>';
            	$contStand .= '<div class="event-copy">';
-           	$contStand .= ($endDate != '') ? '<time>' . $date .'</time>' : '<time>' . $date . '</time>';
-           	$contStand .= '<p class="loc">' . $location . '</p>';
+           	$contStand .= ($endDate != '') ? '<time>' . $day . ', ' . $date .'</time>' : '<time>' . $day . ', ' . $date . '</time>';
            	$contStand .= '<h4 class="event-title">' . $title . '</h4>';
            	$contStand .= '<div class="event-content">' . $content . '</div>';
-           	$contStand .= $website != '' ? '<p class="website"><a href="' . $website . '">Check out the ' . $title . ' Website</a></p>' : '';
            	$contStand .= '</div>';
+           	$contStand .= $website != '' ? '<div class="website"><a href="' . $website . '">' . $click_text . '</a></div>' : '';
            	$contStand .= '</div>';
 
             $y++;
@@ -261,90 +260,6 @@ function sumiaos_get_events($args){
 	$contStand .= '</div><!-- #AllEvents -->';
 	$contStand .= '</div><!-- event-posts -->';
 
-
 	echo $contStand;
 
 }
-
-
-// ajax search features for more past events
-function sumiaos_load_past_events() {
-	$offset = (isset($_POST['offset'])) ? $_POST['offset'] : 0;
-	$currentDate = current_time('Ymd');
-
-	if (function_exists('get_field')) {
-		$ppp = 6;
-    	$argsPast = array(
-    	  'post_type' => 'events',
-    	  'posts_per_page' => $ppp,
-    	  'post_status' => 'publish',
-    	  'offset' => $offset,
-    	  'orderby' => array('meta_value_num' => 'ASC'),
-    	  'meta_query' => array(
-    	  	array(
-    	  		'key' => 'event_date',
-    	  		'value' => $currentDate,
-    	  		'compare' => '<',
-    	  		'type' => 'DATETIME'
-    	  	)
-    	  )
-    	);
-	}
-
-	$past_query = new WP_Query($argsPast);
-
-	if ($past_query->have_posts()) {
-		$y = 0;
-		$contPrior = '';
-		while ($past_query->have_posts()) {
-				$past_query->the_post();
-        		$postId = $past_query->posts[$y]->ID;
-        		$title = $past_query->posts[$y]->post_title;
-        		$id = $past_query->posts[$y]->slug;
-        		$content = apply_filters( 'the_content', $past_query->posts[$y]->post_content);
-
-        		if (function_exists('get_field')){
-	        		$date = get_field('event_date', $postId);
-	        		$enddate = get_field('event_end_date', $postId);
-	        		$endDate = !empty($enddate) ? get_field('event_end_date', $postId) : '';
-        			$dateStamp = strtotime($date);
-        			$location = get_field('event_location', $postId);
-        			$website = get_field('event_website', $postId);
-
-        		if($endDate != ''){
-	        		$startdateraw = strtotime($date);
-	        		$enddateraw = strtotime($endDate);
-
-	        		if(date('Y',$startdateraw) == date('Y',$enddateraw)){
-		        		//same year
-		        		if(date('F',$startdateraw) == date('F',$enddateraw)){
-			        		//same month
-			        		$date = date('F',$startdateraw).' '.date('j',$startdateraw).'-'.date('j',$enddateraw).', '.date('Y',$startdateraw);
-			        	} else {
-				        	//different month
-			        		$date = date('F j',$startdateraw).' - '.date('F j',$enddateraw).', '.date('Y',$startdateraw);
-			        	}
-	        		} else {
-		        		//different year
-		        		$date = date('F j, Y',$startdateraw).' - '.date('F j, Y',$enddateraw);
-	        		}
-        		}
-        		}
-				$contPrior .= '<div class="event-cont">';
-            	$contPrior .= ($endDate != '') ? '<time>' . $date . '</time>' : '<time>' . $date . '</time>';
-            	$contPrior .= '<p class="loc">' . $location . '</p>';
-            	$contPrior .= '<h4 class="event-title">' . $title . '</h4>';
-            	$contPrior .= '<div class="event-content">' . $content . '</div>';
-            	$contPrior .= $website != '' ? '<p class="website"><a href="' . $website . '">Check out the ' . $title . ' Website</a></p>' : '';
-            	$contPrior .= '</div>';
-            	$y++;
-        }
-        echo $contPrior;
-
-        wp_reset_query();
-
-	}
-
-}
-add_action('wp_ajax_nopriv_sumiaos_load_past_events', 'sumiaos_load_past_events');
-add_action('wp_ajax_sumiaos_load_past_events', 'sumiaos_load_past_events');

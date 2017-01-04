@@ -55,7 +55,29 @@ $bgimage = !empty($post_thumb[0]) ? 'style="background-image:url('.$post_thumb[0
 			<?php
 			if ( is_front_page() || is_home() ) { ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php } ?>
+			<?php
+				if (function_exists('get_field')){
+					$frontId = get_option('page_on_front');
+					$address = get_field('header_address', $frontId) != '' ? get_field('header_address', $frontId) : false;
+					$social = array();
+					$fb = get_field_object('facebook_link', $frontId) != '' ? array_push($social, get_field_object('facebook_link', $frontId)) : false;
+					$twit = get_field_object('twitter_link', $frontId) != '' ? array_push($social, get_field_object('twitter_link', $frontId)) : false;
+					$inst = get_field_object('instagram_link', $frontId) != '' ? array_push($social, get_field_object('instagram_link', $frontId)) : false;
+					$html = '';
+					$html .= $address != false ? '<address>' . $address . '</address>' : '';
+
+					if (sizeof($social) > 0) {
+						$html .= '<ul class="social-links">';
+					}
+					for ($x = 0; $x < sizeof($social); $x++) {
+						$html .= '<li><a href="' . $social[$x]['value'] . '" class="' . $social[$x]['wrapper']['class'] . '" target="_blank">' . $social[$x]['placeholder'] . '</a></li>';
+					}
+					if (sizeof($social) > 0) {
+						$html .= '</ul>';
+						echo $html;
+					}
+				}
+			} // end if ?>
 		</div>
 	</header><!-- .entry-header -->
 

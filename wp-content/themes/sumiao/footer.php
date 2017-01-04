@@ -13,8 +13,13 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-	
+	<footer id="colophon" class="site-footer" role="contentinfo"><div class="col-6">
+			<h3>We're Hiring</h3>
+			<a href="">Learn More</a>
+		</div><div class="col-6">
+			<h3>Press Inquiries</h3>
+			<a href="">Contact Us</a>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

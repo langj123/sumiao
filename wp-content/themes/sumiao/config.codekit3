@@ -27,6 +27,30 @@
 		"oAP": "\/404.php",
 		"oF": 0
 		},
+	"\/_img\/bg-pattern.png": {
+		"ft": 32768,
+		"iS": 18132,
+		"oA": 0,
+		"oAP": "\/_img\/bg-pattern.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/_img\/paint-top.png": {
+		"ft": 32768,
+		"iS": 18817,
+		"oA": 0,
+		"oAP": "\/_img\/paint-top.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/_img\/rug-pattern.png": {
+		"ft": 32768,
+		"iS": 48797,
+		"oA": 0,
+		"oAP": "\/_img\/rug-pattern.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/_img\/sumiao-logo.png": {
 		"ft": 32768,
 		"iS": 25207,
@@ -34,6 +58,16 @@
 		"oAP": "\/_img\/sumiao-logo.png",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/_img\/sumiao-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_img\/sumiao-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/_img\/watercolor-sumiaos-animation-v6.png": {
 		"ft": 32768,
@@ -64,19 +98,6 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/ie.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/_scss\/marketo-form.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/marketo-form.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -163,16 +184,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/ie-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/marketo-form.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/marketo-form-min.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -362,6 +373,15 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/js\/min\/min\/post-ajax-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/min\/sumiaos-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/min\/sumiaos-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

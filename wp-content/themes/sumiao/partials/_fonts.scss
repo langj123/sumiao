@@ -1,22 +1,14 @@
-p, li, dt, dd {
-	font-size: 1.5vw;
+p, li, dt, dd, div {
+	font-size: 19px;
 	font-weight: 400;
-	line-height: 2.35vw;
+	line-height: 33px;
 	color: black;
-	@media screen and (max-width: $mobile-break) {
-		font-size: 2.5vw;
-	}
-	@media screen and (min-width: $larger-break) {
-		font-size: 18px;
-		line-height: 28px;
-	}
-	@media screen and (max-width: $mobile-break) {
-		font-size: 14px;
-		line-height: 24px;
-	}
-	.green-bg & {
-		color: white;
-	}
+	font-family: $second-font;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: $main-font;
+	color: $m-head-color;
+	font-weight: 400;
 }
 h1 {
 	font-size: 4vw;
@@ -43,13 +35,8 @@ h2 {
 	}
 }
 h3 {
-	font-size: 2.8vw;
-	@media screen and (max-width: $mobile-break) {
-		font-size: 4.6vw;
-	}
-	@media screen and (min-width: $larger-break) {
-		font-size: 30px;
-	}
+	font-size: 30px;
+	line-height: 36px;
 }
 h4 {
 	font-size: 2.5vw;

@@ -111,20 +111,19 @@ function sumiaos_widgets_init() {
 }
 add_action( 'widgets_init', 'sumiaos_widgets_init' );
 
+
 /**
  * Enqueue scripts and styles.
  */
 function sumiaos_scripts() {
+	wp_enqueue_style( 'sumiao-fonts', 'https://fast.fonts.net/cssapi/c87c8d58-36e0-42ff-b3f8-99e317affb9f.css' );
+	wp_enqueue_style( 'sumiaos-social-fonts', 'https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css' );
 	wp_enqueue_style( 'sumiaos-custom-style', get_template_directory_uri() . '/css/style-sumiaos.css' );
 	wp_enqueue_script( 'sumiaos-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-	wp_enqueue_script( 'sumiaos-fonts','https://use.typekit.net/qyd7xvy.js', array(), '1.0.0', true );
-	wp_enqueue_script( 'sumiaos-font-try', get_template_directory_uri() . '/js/sumiaos-font-try.js', array('sumiaos-fonts'), '1.0.0', true );
 	wp_enqueue_script( 'sumiaos-jquery-cookie', get_template_directory_uri() . '/js/jquery.cookie.js', array('jquery'), '1.0.0', true );
 	wp_enqueue_script( 'gsap-js', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js', array('jquery'), false, true );
 	wp_enqueue_script( 'gsap-css', 'http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js', array('jquery', 'gsap-js'), false, true );
 	wp_enqueue_script( 'sumiaos-custom-js', get_template_directory_uri() . '/js/sumiaos.js', array('jquery', 'gsap-js', 'gsap-css'), '20160623', true );
-
-	wp_enqueue_style( 'marketo-form', get_template_directory_uri() . '/css/marketo-form.css' );
 
 	wp_enqueue_script( 'sumiaos-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

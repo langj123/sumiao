@@ -9,111 +9,118 @@
 @import "compass/css3/flexbox";
 @import "compass/css3/appearance";
 
-.website {
-	font-size: .8vw;
-	line-height: .9vw;
-	margin-top: 25px;
-	@media screen and (max-width: $mobile-break) {
-		font-size: 10px;
-		line-height: 12px;
-	}
-	a {
-		text-decoration: none;
-		text-transform: uppercase;
-		color: #b7b7b7;
-		&:hover {
-			text-decoration: underline;
+#AllEvents {
+	text-align: center;
+	.widget-title {
+		@media screen and (max-width: $small-break) {
+			display: none;
 		}
 	}
 }
 .event-title {
-	font-size: 1.45vw;
-	color: black;
-	font-weight: 700;
-	margin: 1vw 0 0;
-	@media screen and (max-width: $mobile-break) {
-		font-size: 15px;
-		line-height: 23px;
-		margin-top: 25px;
+	font-size: 36px;
+	line-height: 40px;
+	color: #7a746f;
+	font-family: $main-font;
+	margin: 11px 0 5px;
+	@media screen and (max-width: $small-break) {
+		color: #eec400;
 	}
 }
-
 .event-cont {
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
 	background-color: white;
+	text-align: left;
 	.event-copy {
-		width: 75%;
+		width: calc(57.5% - 6vw);
+		margin-left: 6vw;
+		display: inline-block;
+		vertical-align: middle;
+		@media screen and (max-width: $small-break) {
+			width: 100%;
+			text-align: center;
+			margin: 14vw 0 0;
+			padding: 4vw 7vw;
+			border-top: 16px solid #eec400;
+			box-sizing: border-box;
+		}
 	}
 	width: calc(100% - 8vw);
 	margin: 2vw 4vw;
 	background: white;
-	@include flex-group();
 	@include drop-shadow(0, 0, 4vw, 1vw, #e6e6dc, .8);
-	.loc {
-		margin-top: 0;
-		margin-bottom: 0;
-		color: #000000;
-		font-weight: 700;
-		font-size: 1.1vw;
-		line-height: 1.3vw;
-		@media screen and (max-width: $mobile-break) {
-			font-size: 12px;
-			margin-top: 5px;
+	&:before {
+		content: '';
+    	display: inline-block;
+    	height: 100%;
+    	vertical-align: middle;
+    	@media screen and (max-width: $small-break) {
+    		display: none;
+    	}
+	}
+}
+.website {
+	width: 12.5%;
+	display: inline-block;
+	vertical-align: middle;
+	@media screen and (max-width: $small-break) {
+		width: 35%;
+		margin: 0 auto 6vw;
+		display: block;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+		font-family: $third-font;
+		text-align: center;
+		display: block;
+		width: 100%;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 18px;
+		background: #3FC3C0;
+		letter-spacing: 4px;
+		padding: 1.3vw .8vw;
+		@media screen and (max-width: $small-break) {
+			line-height: 44px;
 		}
+	}
+}
+.event-photo {
+	width: calc(30% - 16px);
+	border-right: 16px solid $yellow;
+	display: inline-block;
+	vertical-align: middle;
+	@media screen and (max-width: $small-break) {
+		width: 100%;
+		border-right: 0;
+	}
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
 	}
 }
 .event-content {
 	* {
-		font-family: $main-font;
+		font-family: $second-font;
 		font-weight: 300;
 		&:first-of-type {
 			margin-top: 0;
 		}
 		color: #a8a8a8;
-		font-size: 1.1vw;
-		@media screen and (max-width: $mobile-break) {
-			font-size: 13px;
-			line-height: 20px;
-		}
-	}
-}
-
-.search-warning, .search-loading {
-	width: 100%;
-	text-align: center;
-	font-size: 1.5vw;
-	padding: 2vw 4vw;
-}
-.search-loading {
-	background: url(../_img/loading.gif)no-repeat center center;
-	background-size: contain;
-	text-indent: -10000px;
-}
-.loader {
-	text-align: center;
-	border: none;
-	display: block;
-	margin: 0 auto;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-family: $main-font;
-	background-color: transparent;
-	@include letter-space(.2vw);
-	font-size: 1.2vw;
-	color: $green;
-	&:focus {
-		outline: none;
-	}
-	@media screen and (max-width: $mobile-break) {
-		font-size: 14px;
+		font-size: 20px;
 	}
 }
 .event-cont {
 	time {
-		color: #b7b7b7;
-		font-size: 1.1vw;
-		@media screen and (max-width: $mobile-break) {
+		font-family: $third-font;
+		color: #c0bfbf;
+		font-size: 13px;
+		line-height: 18px;
+		letter-spacing: 4px;
+		@media screen and (max-width: $small-break) {
 			font-size: 12px;
 		}
 	}
@@ -121,7 +128,7 @@
 .widget-blurb {
 	text-align: center;
 	margin: 0;
-	@media screen and (max-width: $mobile-break) {
+	@media screen and (max-width: $small-break) {
 		font-size: 12px;
 		line-height: 16px;
 	}
