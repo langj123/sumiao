@@ -4,16 +4,6 @@
 		@include background(url(../_img/footer-texture.gif) repeat-x bottom left, linear-gradient(top, rgba(#f1c600,.91) 0%, rgba(#f1c600,.91) 100%), url(../_img/rug-pattern.png) no-repeat top center/ cover);
 		padding-bottom: 20vw;
 	}
-	.ext-link {
-		background: #FBE215;
-		text-align: center;
-		font-family: $second-font;
-		text-transform: uppercase;
-		font-size: 15px;
-		a {
-			text-decoration: none;
-		}
-	}
 	.col-6 {
 		display: inline-block;
 		vertical-align: middle;
@@ -71,4 +61,14 @@
 		display: inline-block;
 		@include part-border(55px, "bottom", 15px, 4px, $yellow, "center");
 	}
+}
+.ext-link {
+		background: #FBE215;
+		text-align: center;
+		font-family: $second-font;
+		text-transform: uppercase;
+		font-size: 15px;
+		a {
+			text-decoration: none;
+		}
 }
