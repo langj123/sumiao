@@ -20,6 +20,7 @@
 			<h3>Press Inquiries</h3>
 			<a href="">Contact Us</a>
 		</div>
+		<div class="ext-link">Site by <a href="http://icscreative.com/">ICS</a></div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
