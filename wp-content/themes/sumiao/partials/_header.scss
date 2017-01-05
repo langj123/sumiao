@@ -14,16 +14,18 @@
 		color: white;
 		font-style: normal;
 		font-family: $third-font;
-		margin: 4vw 0 6vw;
+		margin: 4vw 0 4vw;
 		opacity: 0;
-		letter-spacing: 4px;
-		font-size: 15px;
+		letter-spacing: 5px;
+		font-size: 14px;
 		-moz-transform: translateY(-50px);
 		-webkit-transform: translateY(-50px);
 		transform: translateY(-50px);
 		@media screen and (max-width: $mobile-break) {
-			font-size: 11px;
-			letter-spacing: 2px;
+			font-size: 10px;
+			line-height: 15px;
+			letter-spacing: 3px;
+			margin: 10vw 0 12vw;
 		}
 	}
 }
@@ -49,6 +51,11 @@
 			color: white;
 			text-decoration: none;
 			font-family: "socicon";
+			@media screen and (max-width: $mobile-break) {
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+			}
 			&:hover {
 				background: white;
 				border: 2px solid white;
@@ -62,17 +69,23 @@
 		font-size: 19px;
 		line-height: 40px;
 		display: inline-block;
+		@media screen and (max-width: $mobile-break) {
+			line-height: 31px;
+		}
 	}
 }
 .title-container {
-	display:block;
-	position: relative;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include transform(translate(-50%, -65%));
 	text-align:center;
-	padding: 5vw 0;
 	margin: 0 auto;
 	z-index:10;
-	@media screen and (max-width: $small-break) {
-		padding: 56vw 0;
+	width: 100%;
+	@media screen and (max-width: $mobile-break) {
+		@include transform(translate(-50%, -50%));
 	}
 		h1,
 		h2 {

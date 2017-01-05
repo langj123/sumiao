@@ -4,6 +4,9 @@
   @media screen and (max-width: 600px) {
     #AllEvents .widget-title {
       display: none; } }
+  @media screen and (max-width: 780px) {
+    #AllEvents {
+      margin-top: 4vw; } }
 
 .event-title {
   font-size: 36px;
@@ -11,6 +14,10 @@
   color: #7a746f;
   font-family: "True North W01 Regular";
   margin: 11px 0 5px; }
+  @media screen and (max-width: 600px) {
+    .event-title {
+      font-size: 30px;
+      line-height: 36px; } }
   @media screen and (max-width: 600px) {
     .event-title {
       color: #eec400; } }
@@ -99,6 +106,9 @@
   font-size: 20px; }
   .event-content *:first-of-type {
     margin-top: 0; }
+  @media screen and (max-width: 780px) {
+    .event-content * {
+      font-size: 16px; } }
 
 .event-cont time {
   font-family: "Industry Inc W00 Base";

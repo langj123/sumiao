@@ -16,6 +16,9 @@
 			display: none;
 		}
 	}
+	@media screen and (max-width: $mobile-break) {
+		margin-top: 4vw;
+	}
 }
 .event-title {
 	font-size: 36px;
@@ -23,6 +26,10 @@
 	color: #7a746f;
 	font-family: $main-font;
 	margin: 11px 0 5px;
+	@media screen and (max-width: $small-break) {
+		font-size: 30px;
+		line-height: 36px;
+	}
 	@media screen and (max-width: $small-break) {
 		color: #eec400;
 	}
@@ -115,6 +122,9 @@
 		}
 		color: #a8a8a8;
 		font-size: 20px;
+		@media screen and (max-width: $mobile-break) {
+			font-size: 16px;
+		}
 	}
 }
 .event-cont {

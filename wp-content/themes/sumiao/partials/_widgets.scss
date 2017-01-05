@@ -53,6 +53,9 @@
 			opacity: 0;
 			background: url("../_img/watercolor-sumiaos-animation-v6.png") no-repeat 0 0 / 1143vw; /* 14448px was the original */
 			pointer-events: none;
+			animation: bgReset .75s steps(23, start) infinite forwards;
+			-moz-animation: bgReset .75s steps(23, end) 1 forwards;
+			-webkit-animation: bgReset .75s steps(23, end) 1 forwards;
 			@media screen and (max-width: $mobile-break) {
 				width: 97%;
 				background: url("../_img/watercolor-sumiaos-animation-v6.png") no-repeat 0 0 / 2286vw; /* 14448px was the original */
@@ -65,6 +68,20 @@
 				animation: bgShift .75s steps(23, start) infinite forwards;
 				-moz-animation: bgShift .75s steps(23, end) 1 forwards;
 				-webkit-animation: bgShift .75s steps(23, end) 1 forwards;
+			}
+		}
+	}
+	&.revAnimate {
+		.panel-grid-cell:first-of-type {
+			&:after {
+				opacity: 1;
+				background: url("../_img/watercolor-sumiaos-animation-v6.png") no-repeat -1095.37vw 0 / 1143vw; /* 14448px was the original */
+				animation: bgReset .75s steps(23, start) infinite forwards;
+				-moz-animation: bgReset .75s steps(23, end) 1 forwards;
+				-webkit-animation: bgReset .75s steps(23, end) 1 forwards;
+				@media screen and (max-width: $mobile-break) {
+					background: url("../_img/watercolor-sumiaos-animation-v6.png") no-repeat -2190.74vw 0 / 2286vw; /* 14448px was the original */
+				}
 			}
 		}
 	}
@@ -93,10 +110,18 @@ h3.widget-title {
 		line-height: 48px;
 		@include part-border(55px, "bottom", 20px, 4px, $yellow, "right");
 		@media screen and (max-width: $mobile-break) {
+			font-size: 30px;
+			line-height: 36px;
 			text-align: left;
 			@include part-border(55px, "bottom", 20px, 4px, $yellow, "left");
 		}
 	}
+}
+.sow-slider-base .sow-slide-nav a {
+	color: #f0cc22 !important;
+}
+.sow-slider-base .sow-slide-nav {
+	font-size: 35px !important;
 }
 .sow-slider-image-wrapper {
 	max-width: 100% !important;

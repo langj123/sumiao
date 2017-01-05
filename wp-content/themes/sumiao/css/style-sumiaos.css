@@ -170,6 +170,18 @@ body {
     to {
       opacity: 1;
       background-position-x: -2190.74vw; } } }
+@-moz-keyframes bgReset {
+  to {
+    opacity: 1;
+    background-position-x: 0; } }
+@-webkit-keyframes bgReset {
+  to {
+    opacity: 1;
+    background-position-x: 0; } }
+@keyframes bgReset {
+  to {
+    opacity: 1;
+    background-position-x: 0; } }
 @-moz-keyframes opacityFade {
   0% {
     opacity: 0;
@@ -303,6 +315,10 @@ p, li, dt, dd, div {
   line-height: 33px;
   color: black;
   font-family: "Sofia W01 Light1446819"; }
+  @media screen and (max-width: 780px) {
+    p, li, dt, dd, div {
+      font-size: 16px;
+      line-height: 30px; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "True North W01 Regular";
@@ -383,17 +399,19 @@ h6 {
     color: white;
     font-style: normal;
     font-family: "Industry Inc W00 Base";
-    margin: 4vw 0 6vw;
+    margin: 4vw 0 4vw;
     opacity: 0;
-    letter-spacing: 4px;
-    font-size: 15px;
+    letter-spacing: 5px;
+    font-size: 14px;
     -moz-transform: translateY(-50px);
     -webkit-transform: translateY(-50px);
     transform: translateY(-50px); }
     @media screen and (max-width: 780px) {
       .entry-header address {
-        font-size: 11px;
-        letter-spacing: 2px; } }
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: 3px;
+        margin: 10vw 0 12vw; } }
 
 .social-links {
   padding: 0;
@@ -417,6 +435,11 @@ h6 {
       color: white;
       text-decoration: none;
       font-family: "socicon"; }
+      @media screen and (max-width: 780px) {
+        .social-links li a {
+          width: 30px;
+          height: 30px;
+          line-height: 30px; } }
       .social-links li a:hover {
         background: white;
         border: 2px solid white; }
@@ -426,17 +449,29 @@ h6 {
     font-size: 19px;
     line-height: 40px;
     display: inline-block; }
+    @media screen and (max-width: 780px) {
+      .social-links [class^="socicon-"]:before, .social-links [class*=" socicon-"]:before {
+        line-height: 31px; } }
 
 .title-container {
   display: block;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -65%);
+  -ms-transform: translate(-50%, -65%);
+  -webkit-transform: translate(-50%, -65%);
+  transform: translate(-50%, -65%);
   text-align: center;
-  padding: 5vw 0;
   margin: 0 auto;
-  z-index: 10; }
-  @media screen and (max-width: 600px) {
+  z-index: 10;
+  width: 100%; }
+  @media screen and (max-width: 780px) {
     .title-container {
-      padding: 56vw 0; } }
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); } }
   .title-container h1,
   .title-container h2 {
     color: #fff;
@@ -1304,7 +1339,10 @@ nav.main-navigation {
     opacity: 0;
     background: url("../_img/watercolor-sumiaos-animation-v6.png") no-repeat 0 0/1143vw;
     /* 14448px was the original */
-    pointer-events: none; }
+    pointer-events: none;
+    animation: bgReset 0.75s steps(23, start) infinite forwards;
+    -moz-animation: bgReset 0.75s steps(23, end) 1 forwards;
+    -webkit-animation: bgReset 0.75s steps(23, end) 1 forwards; }
     @media screen and (max-width: 780px) {
       .watermark .panel-grid-cell:first-of-type:after {
         width: 97%;
@@ -1314,6 +1352,17 @@ nav.main-navigation {
     animation: bgShift 0.75s steps(23, start) infinite forwards;
     -moz-animation: bgShift 0.75s steps(23, end) 1 forwards;
     -webkit-animation: bgShift 0.75s steps(23, end) 1 forwards; }
+  .watermark.revAnimate .panel-grid-cell:first-of-type:after {
+    opacity: 1;
+    background: url("../_img/watercolor-sumiaos-animation-v6.png") no-repeat -1095.37vw 0/1143vw;
+    /* 14448px was the original */
+    animation: bgReset 0.75s steps(23, start) infinite forwards;
+    -moz-animation: bgReset 0.75s steps(23, end) 1 forwards;
+    -webkit-animation: bgReset 0.75s steps(23, end) 1 forwards; }
+    @media screen and (max-width: 780px) {
+      .watermark.revAnimate .panel-grid-cell:first-of-type:after {
+        background: url("../_img/watercolor-sumiaos-animation-v6.png") no-repeat -2190.74vw 0/2286vw;
+        /* 14448px was the original */ } }
   .watermark:before {
     content: "";
     display: block;
@@ -1359,6 +1408,8 @@ h3.widget-title {
       margin-right: 0; }
     @media screen and (max-width: 780px) {
       .watermark h3.widget-title {
+        font-size: 30px;
+        line-height: 36px;
         text-align: left; }
         .watermark h3.widget-title:after {
           content: "";
@@ -1371,6 +1422,12 @@ h3.widget-title {
           margin-top: 20px;
           margin-left: 0;
           margin-right: auto; } }
+
+.sow-slider-base .sow-slide-nav a {
+  color: #f0cc22 !important; }
+
+.sow-slider-base .sow-slide-nav {
+  font-size: 35px !important; }
 
 .sow-slider-image-wrapper {
   max-width: 100% !important; }
@@ -7153,6 +7210,11 @@ h3.widget-title {
     box-sizing: border-box; }
     #colophon a:hover {
       background: #3FC3C0; }
+      @media screen and (max-width: 780px) {
+        #colophon a:hover {
+          background: #fff;
+          border: 4px solid #fff;
+          color: #3FC3C0; } }
     @media screen and (max-width: 780px) {
       #colophon a {
         background: #3FC3C0;

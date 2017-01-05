@@ -4,6 +4,10 @@ p, li, dt, dd, div {
 	line-height: 33px;
 	color: black;
 	font-family: $second-font;
+	@media screen and (max-width: $mobile-break) {
+		font-size: 16px;
+		line-height: 30px;
+	}
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family: $main-font;

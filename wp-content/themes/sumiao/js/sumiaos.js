@@ -17,9 +17,13 @@ jQuery(function($) {
   		wS = window.pageYOffset;
   		wH = window.innerHeight;
   		wMPos = wMark[0].offsetTop;
-  		if (wS + wH/1.75 > wMPos) {
+  		if (wS + wH/1.75 >= wMPos && !$(wMark[0]).hasClass('animate')) {
   			$(wMark[0]).addClass('animate');
-  		}
+        $(wMark[0]).removeClass('revAnimate');
+  		} else if (wS + wH/1.75 < wMPos && $(wMark[0]).hasClass('animate')) {
+        $(wMark[0]).removeClass('animate');
+        $(wMark[0]).addClass('revAnimate');
+      }
   	}
   // header animations
   tl.to(logo, .3, {css: {transform: "translateY(0)", opacity: 1}})
