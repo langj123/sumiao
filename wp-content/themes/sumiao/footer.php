@@ -18,7 +18,7 @@
 			<a href="">Learn More</a>
 		</div><div class="col-6">
 			<h3>Press Inquiries</h3>
-			<a href="">Contact Us</a>
+			<a href="mailto:info@sumiaohunan.com">Contact Us</a>
 		</div>
 
 	</footer><!-- #colophon -->

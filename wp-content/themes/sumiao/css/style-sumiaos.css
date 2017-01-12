@@ -1303,6 +1303,10 @@ nav.main-navigation {
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%); } }
 
+.instagram-feed {
+  text-align: center;
+  margin: 8vw 0; }
+
 @media screen and (max-width: 780px) {
   .row-images .panel-grid-cell {
     width: 50% !important;
