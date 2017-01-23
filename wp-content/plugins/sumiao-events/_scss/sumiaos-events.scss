@@ -12,9 +12,6 @@
 #AllEvents {
 	text-align: center;
 	.widget-title {
-		@media screen and (max-width: $small-break) {
-			display: none;
-		}
 	}
 	@media screen and (max-width: $mobile-break) {
 		margin-top: 4vw;

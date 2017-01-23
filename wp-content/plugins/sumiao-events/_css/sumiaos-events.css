@@ -1,9 +1,6 @@
 /* offset-x | offset-y | blur-radius | spread-radius | color */
 #AllEvents {
   text-align: center; }
-  @media screen and (max-width: 600px) {
-    #AllEvents .widget-title {
-      display: none; } }
   @media screen and (max-width: 780px) {
     #AllEvents {
       margin-top: 4vw; } }
