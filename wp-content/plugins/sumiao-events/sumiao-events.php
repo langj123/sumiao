@@ -193,13 +193,14 @@ function sumiaos_get_events($args){
     	);
 	}
 	$event_query = new WP_Query($args);
+
+	$contStand = '<div class="entry-content blog-posts archive-posts event-posts">';
+	$contStand .= '<div id="AllEvents">';
+	$contStand .= !empty($topTitle) ? '<h3 class="widget-title title-spec">' . $topTitle . '</h3>' : '';
+	$contStand .= !empty($blurb) ? '<p class="widget-blurb">' . $blurb . '</p>' : '';
 	// query for current events
  	if ($event_query->have_posts()) {
     	$y = 0;
-    	$contStand = '<div class="entry-content blog-posts archive-posts event-posts">';
-		$contStand .= '<div id="AllEvents">';
-		$contStand .= !empty($topTitle) ? '<h3 class="widget-title title-spec">' . $topTitle . '</h3>' : '';
-		$contStand .= !empty($blurb) ? '<p class="widget-blurb">' . $blurb . '</p>' : '';
 		$contStand .= '<div class="current-events events-holder">';
 
         while ($event_query->have_posts()) {
@@ -254,6 +255,9 @@ function sumiaos_get_events($args){
         }
         $contStand .= '</div><!-- .current-events -->';
         wp_reset_query();
+    } // end of query check
+    else {
+    	$contStand .= '<p class="widget-blurb">There are no upcoming events or news. Please check back for updates.</p>';
     }
 
 
