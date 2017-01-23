@@ -8,14 +8,21 @@
  *
  * @package Annuitas
  */
+	if (function_exists('get_field')) {
+		$frontId = get_option('page_on_front');
+		$jobs = get_field('job_listings', $frontId) != '' ? get_field('job_listings', $frontId) : false;
 
+
+	}
 ?>
 
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo"><div class="col-6">
+		<?php if ($jobs != false) { ?>
 			<h3>We're Hiring</h3>
-			<a href="">Learn More</a>
+			<a href="<?php echo $jobs; ?>" target="_blank">Learn More</a>
+		<?php } ?>
 		</div><div class="col-6">
 			<h3>Press Inquiries</h3>
 			<a href="mailto:info@sumiaohunan.com">Contact Us</a>
