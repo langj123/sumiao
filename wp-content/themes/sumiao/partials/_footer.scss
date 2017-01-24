@@ -1,6 +1,7 @@
 #colophon {
 	@include background(linear-gradient(left, rgba(#005dc3, .91) 50%, rgba(#0a924a, .91) 100%), url(../_img/rug-pattern.png) no-repeat top center/ 100%);
 	@media screen and (max-width: $mobile-break) {
+		@include background(linear-gradient(left, rgba(#005dc3, .91) 50%, rgba(#0a924a, .91) 100%), url(../_img/rug-pattern.png) no-repeat top center/ cover);
 		padding-bottom: 20vw;
 	}
 	.col-6 {
