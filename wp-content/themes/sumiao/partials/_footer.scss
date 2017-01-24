@@ -12,9 +12,6 @@
 		padding: 6vw 0;
 		&:first-of-type {
 			background: rgba(#002f62, .24);
-			@media screen and (max-width: $mobile-break) {
-				background: rgba(#d6b000, .6);
-			}
 		}
 		@media screen and (max-width: $mobile-break) {
 			width: 100%;
