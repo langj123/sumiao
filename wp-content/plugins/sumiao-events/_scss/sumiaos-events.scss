@@ -117,6 +117,9 @@
 	font-size: 19px;
 	line-height: 25px;
 	letter-spacing: 1.5px;
+	@media screen and (max-width: $small-break) {
+		color: #7a746f;
+	}
 }
 .event-content {
 	* {
