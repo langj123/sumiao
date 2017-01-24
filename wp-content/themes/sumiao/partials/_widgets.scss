@@ -134,6 +134,9 @@ h3.widget-title {
 		height: auto;
 	}
 }
+.sow-slider-pagination, .sow-slide-nav {
+   display: block !important;
+}
 @for $i from 1 through 100 {
   .width-#{$i} {
   	width: #{$i}#{'%'};

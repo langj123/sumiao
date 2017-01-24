@@ -1439,6 +1439,9 @@ h3.widget-title {
     width: 100%;
     height: auto; }
 
+.sow-slider-pagination, .sow-slide-nav {
+  display: block !important; }
+
 .width-1 {
   width: 1%;
   margin: 4vw auto;
