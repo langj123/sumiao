@@ -96,6 +96,13 @@
     height: auto;
     display: block; }
 
+.no-news {
+  max-width: 1000%;
+  width: 75%;
+  margin: 30px auto 95px;
+  font-size: 19px;
+  line-height: 25px; }
+
 .event-content * {
   font-family: "Sofia W01 Light1446819";
   font-weight: 300;
