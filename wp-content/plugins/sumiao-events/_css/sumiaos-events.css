@@ -120,10 +120,6 @@
 .widget-blurb {
   text-align: center;
   margin: 0 0 65px 0; }
-  @media screen and (max-width: 600px) {
-    .widget-blurb {
-      font-size: 12px;
-      line-height: 16px; } }
 
 .events-holder {
   display: -webkit-flex;

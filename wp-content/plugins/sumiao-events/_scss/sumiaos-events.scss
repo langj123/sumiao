@@ -139,10 +139,6 @@
 .widget-blurb {
 	text-align: center;
 	margin: 0 0 65px 0;
-	@media screen and (max-width: $small-break) {
-		font-size: 12px;
-		line-height: 16px;
-	}
 }
 .events-holder {
 	@include flex-group(inherit, inherit);
