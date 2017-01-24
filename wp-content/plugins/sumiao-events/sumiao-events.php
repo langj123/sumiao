@@ -257,7 +257,7 @@ function sumiaos_get_events($args){
         wp_reset_query();
     } // end of query check
     else {
-    	$contStand .= '<p class="widget-blurb">There are no upcoming events or news. Please check back for updates.</p>';
+    	$contStand .= '<h4 class="event-title">There are no upcoming events or news. Please check back for updates.</h4>';
     }
 
 
