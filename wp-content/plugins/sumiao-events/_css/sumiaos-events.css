@@ -99,9 +99,10 @@
 .no-news {
   max-width: 1000%;
   width: 75%;
-  margin: 30px auto 95px;
+  margin: 25px auto 80px;
   font-size: 19px;
-  line-height: 25px; }
+  line-height: 25px;
+  letter-spacing: 1.5px; }
 
 .event-content * {
   font-family: "Sofia W01 Light1446819";
