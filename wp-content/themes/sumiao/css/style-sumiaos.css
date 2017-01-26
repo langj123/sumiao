@@ -1436,7 +1436,7 @@ h3.widget-title {
     width: 100%;
     vertical-align: middle; }
 
-.sow-slider-base > .sow-slider-base {
+.sow-slider-base .sow-slider-images {
   display: inline-block;
   vertical-align: middle; }
 
