@@ -1428,7 +1428,14 @@ h3.widget-title {
           margin-right: auto; } }
 
 .sow-slider-base {
-  max-height: 90vh; }
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center; }
+
+.sow-slider-images {
+  width: 100%; }
 
 .sow-slider-base .sow-slide-nav a {
   color: #f0cc22 !important; }
