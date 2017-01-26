@@ -123,6 +123,17 @@ h3.widget-title {
 }
 .sow-slider-base {
 	max-height: 90vh;
+	&:before {
+		content: " ";
+  		display: inline-block;
+  		height: 100%;
+  		width: 100%;
+  		vertical-align: middle;
+	}
+}
+.sow-slider-base > .sow-slider-base {
+	display: inline-block;
+	vertical-align: middle;
 }
 .sow-slider-base .sow-slide-nav a {
 	color: #f0cc22 !important;
