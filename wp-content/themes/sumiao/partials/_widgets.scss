@@ -132,8 +132,8 @@ h3.widget-title {
 	}
 }
 .sow-slider-base .sow-slider-images {
-	display: inline-block;
-	vertical-align: middle;
+	display: inline-block !important;
+	vertical-align: middle !important;
 }
 .sow-slider-base .sow-slide-nav a {
 	color: #f0cc22 !important;
