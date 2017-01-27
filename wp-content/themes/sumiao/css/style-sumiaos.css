@@ -389,7 +389,7 @@ h6 {
   background-size: cover;
   display: block;
   height: 0;
-  padding: 0 0 74.44%;
+  padding: 0 0 68.66%;
   position: relative;
   width: 100%; }
   @media screen and (max-width: 600px) {
@@ -489,13 +489,13 @@ h6 {
   .title-container h1 a {
     display: block;
     background: url("../_img/sumiao-logo.svg") center center/100%;
-    width: 525px;
+    width: 495px;
     height: 0;
     opacity: 0;
     -moz-transform: translateY(-150px);
     -webkit-transform: translateY(-150px);
     transform: translateY(-150px);
-    padding-bottom: 300px;
+    padding-bottom: 285px;
     text-indent: -10000px;
     margin: 0 auto; }
     @media screen and (max-width: 780px) {
