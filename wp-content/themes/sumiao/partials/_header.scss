@@ -113,9 +113,13 @@
 			padding-bottom: 285px;
 			text-indent: -10000px;
 			margin: 0 auto;
-			@media screen and (max-width: $mobile-break) {
+			@media screen and (min-width: $small-break + 1px) and (max-width: $mobile-break) {
 				width: 52%;
 				padding-bottom: 31%;
+			}
+			@media screen and (max-width: $small-break) {
+				width: 65%;
+				padding-bottom: 39%;
 			}
 		}
 		h2 {

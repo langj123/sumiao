@@ -498,10 +498,14 @@ h6 {
     padding-bottom: 285px;
     text-indent: -10000px;
     margin: 0 auto; }
-    @media screen and (max-width: 780px) {
+    @media screen and (min-width: 601px) and (max-width: 780px) {
       .title-container h1 a {
         width: 52%;
         padding-bottom: 31%; } }
+    @media screen and (max-width: 600px) {
+      .title-container h1 a {
+        width: 65%;
+        padding-bottom: 39%; } }
   @media screen and (max-width: 780px) {
     .title-container h2 {
       letter-spacing: .65vw;
