@@ -79,7 +79,7 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	@include transform(translate(-50%, -65%));
+	@include transform(translate(-50%, -55%));
 	text-align:center;
 	margin: 0 auto;
 	z-index:10;
