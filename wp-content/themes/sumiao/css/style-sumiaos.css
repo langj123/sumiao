@@ -411,7 +411,7 @@ h6 {
         font-size: 10px;
         line-height: 15px;
         letter-spacing: 3px;
-        margin: 10vw 0 12vw; } }
+        margin: 3vw 0 4vw; } }
 
 .social-links {
   padding: 0;
@@ -500,8 +500,8 @@ h6 {
     margin: 0 auto; }
     @media screen and (max-width: 780px) {
       .title-container h1 a {
-        width: 65%;
-        padding-bottom: 37%; } }
+        width: 52%;
+        padding-bottom: 31%; } }
   @media screen and (max-width: 780px) {
     .title-container h2 {
       letter-spacing: .65vw;
