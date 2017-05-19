@@ -4,310 +4,114 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "AD8D064C-2DBB-41C6-9DF0-3918D51CE5C2"
+		"uuidString": "98CB3EAA-1229-42F6-81C2-0F2A6C0EAC07"
 		}
 	],
 "creatorBuild": "25444",
 "files": {
-	"\/.jscsrc": {
-		"ft": 8192,
+	"\/_css\/burro-menus.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 2,
-		"oAP": "\/.jscsrc",
-		"oF": 0
-		},
-	"\/.jshintignore": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.jshintignore",
-		"oF": 0
-		},
-	"\/404.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/404.php",
-		"oF": 0
-		},
-	"\/_img\/android-icon-144x144.png": {
-		"ft": 32768,
-		"iS": 13519,
-		"oA": 0,
-		"oAP": "\/_img\/android-icon-144x144.png",
+		"oAP": "\/_css\/burro-menus-min.css",
 		"oF": 0,
-		"opt": 0
+		"oS": 0
 		},
-	"\/_img\/android-icon-192x192.png": {
-		"ft": 32768,
-		"iS": 17643,
-		"oA": 0,
-		"oAP": "\/_img\/android-icon-192x192.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/android-icon-36x36.png": {
-		"ft": 32768,
-		"iS": 2616,
-		"oA": 0,
-		"oAP": "\/_img\/android-icon-36x36.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/android-icon-48x48.png": {
-		"ft": 32768,
-		"iS": 3621,
-		"oA": 0,
-		"oAP": "\/_img\/android-icon-48x48.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/android-icon-72x72.png": {
-		"ft": 32768,
-		"iS": 5735,
-		"oA": 0,
-		"oAP": "\/_img\/android-icon-72x72.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/android-icon-96x96.png": {
-		"ft": 32768,
-		"iS": 8094,
-		"oA": 0,
-		"oAP": "\/_img\/android-icon-96x96.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/apple-icon-114x114.png": {
-		"ft": 32768,
-		"iS": 10032,
-		"oA": 0,
-		"oAP": "\/_img\/apple-icon-114x114.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/apple-icon-120x120.png": {
-		"ft": 32768,
-		"iS": 10713,
-		"oA": 0,
-		"oAP": "\/_img\/apple-icon-120x120.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/apple-icon-144x144.png": {
-		"ft": 32768,
-		"iS": 13519,
-		"oA": 0,
-		"oAP": "\/_img\/apple-icon-144x144.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/apple-icon-152x152.png": {
-		"ft": 32768,
-		"iS": 14512,
-		"oA": 0,
-		"oAP": "\/_img\/apple-icon-152x152.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/apple-icon-180x180.png": {
-		"ft": 32768,
-		"iS": 18234,
-		"oA": 0,
-		"oAP": "\/_img\/apple-icon-180x180.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/apple-icon-57x57.png": {
-		"ft": 32768,
-		"iS": 4385,
-		"oA": 0,
-		"oAP": "\/_img\/apple-icon-57x57.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/apple-icon-60x60.png": {
-		"ft": 32768,
-		"iS": 4693,
-		"oA": 0,
-		"oAP": "\/_img\/apple-icon-60x60.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/apple-icon-72x72.png": {
-		"ft": 32768,
-		"iS": 5735,
-		"oA": 0,
-		"oAP": "\/_img\/apple-icon-72x72.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/apple-icon-76x76.png": {
-		"ft": 32768,
-		"iS": 6112,
-		"oA": 0,
-		"oAP": "\/_img\/apple-icon-76x76.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/apple-icon-precomposed.png": {
-		"ft": 32768,
-		"iS": 18217,
-		"oA": 0,
-		"oAP": "\/_img\/apple-icon-precomposed.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/apple-icon.png": {
-		"ft": 32768,
-		"iS": 18217,
-		"oA": 0,
-		"oAP": "\/_img\/apple-icon.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/bg-pattern.png": {
-		"ft": 32768,
-		"iS": 18132,
-		"oA": 0,
-		"oAP": "\/_img\/bg-pattern.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/browserconfig.xml": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_img\/browserconfig.xml",
-		"oF": 0
-		},
-	"\/_img\/favicon-16x16.png": {
-		"ft": 32768,
-		"iS": 1472,
-		"oA": 0,
-		"oAP": "\/_img\/favicon-16x16.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/favicon-32x32.png": {
-		"ft": 32768,
-		"iS": 2290,
-		"oA": 0,
-		"oAP": "\/_img\/favicon-32x32.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/favicon-96x96.png": {
-		"ft": 32768,
-		"iS": 8094,
-		"oA": 0,
-		"oAP": "\/_img\/favicon-96x96.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/favicon.ico": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_img\/favicon.ico",
-		"oF": 0
-		},
-	"\/_img\/footer-texture.gif": {
-		"ft": 4194304,
-		"iS": 19163,
-		"oA": 0,
-		"oAP": "\/_img\/footer-texture.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/manifest.json": {
-		"ft": 524288,
+	"\/_css\/ie.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "\/_img\/manifest-min.json",
+		"oAP": "\/_css\/ie-min.css",
 		"oF": 0,
-		"oO": 0,
-		"oS": 1
+		"oS": 0
 		},
-	"\/_img\/ms-icon-144x144.png": {
-		"ft": 32768,
-		"iS": 13519,
+	"\/_css\/print.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_css\/print-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/_css\/screen.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_css\/screen-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/_css\/sumiaos-menus.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/_css\/sumiaos-menus-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/_img\/menu-pattern.gif": {
+		"ft": 4194304,
+		"iS": 13822,
 		"oA": 0,
-		"oAP": "\/_img\/ms-icon-144x144.png",
+		"oAP": "\/_img\/menu-pattern.gif",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/_img\/ms-icon-150x150.png": {
-		"ft": 32768,
-		"iS": 14276,
-		"oA": 0,
-		"oAP": "\/_img\/ms-icon-150x150.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/ms-icon-310x310.png": {
-		"ft": 32768,
-		"iS": 39638,
-		"oA": 0,
-		"oAP": "\/_img\/ms-icon-310x310.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/ms-icon-70x70.png": {
-		"ft": 32768,
-		"iS": 5552,
-		"oA": 0,
-		"oAP": "\/_img\/ms-icon-70x70.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/paint-top.png": {
-		"ft": 32768,
-		"iS": 18817,
-		"oA": 0,
-		"oAP": "\/_img\/paint-top.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/rug-pattern.png": {
-		"ft": 32768,
-		"iS": 48797,
-		"oA": 0,
-		"oAP": "\/_img\/rug-pattern.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/sumiao-logo.png": {
-		"ft": 32768,
-		"iS": 25207,
-		"oA": 0,
-		"oAP": "\/_img\/sumiao-logo.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_img\/sumiao-logo.svg": {
+	"\/_img\/zig-zag-embellishment.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/_img\/sumiao-logo.svg",
+		"oAP": "\/_img\/zig-zag-embellishment.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/_img\/watercolor-sumiaos-animation-v6.png": {
-		"ft": 32768,
-		"iS": 51195,
-		"oA": 0,
-		"oAP": "\/_img\/watercolor-sumiaos-animation-v6.png",
+	"\/_js\/min\/ann-events-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/_js\/min\/min\/ann-events-min-min.js",
 		"oF": 0,
-		"opt": 0
+		"sC": 1,
+		"tS": 0
 		},
-	"\/_scss\/.sass-cache\/1cf00433c740d34259db4d036ef3ed492599d4b8\/style-ann.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_scss\/.sass-cache\/1cf00433c740d34259db4d036ef3ed492599d4b8\/style-ann.scssc",
-		"oF": 0
+	"\/_js\/min\/burro-menus-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_js\/min\/min\/burro-menus-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
-	"\/_scss\/.sass-cache\/3e26d22730b2febdeae4451efca4fae0d0904940\/style-ann.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_scss\/.sass-cache\/3e26d22730b2febdeae4451efca4fae0d0904940\/style-ann.scssc",
-		"oF": 0
+	"\/_js\/min\/sumiaos-menus-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_js\/min\/min\/sumiaos-menus-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/_js\/sumiaos-menus.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_js\/min\/sumiaos-menus-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/_scss\/ie.scss": {
 		"aP": 0,
@@ -317,7 +121,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/ie.css",
+		"oAP": "\/_css\/ie.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -330,7 +134,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/print.css",
+		"oAP": "\/_css\/print.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -343,12 +147,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/screen.css",
+		"oAP": "\/_css\/screen.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/_scss\/style-sumiaos.scss": {
+	"\/_scss\/sumiaos-menus.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -356,391 +160,16 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/style-sumiaos.css",
+		"oAP": "\/_css\/sumiaos-menus.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/archive-resources-library.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/archive-resources-library.php",
-		"oF": 0
-		},
-	"\/archive.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/archive.php",
-		"oF": 0
-		},
-	"\/author.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/author.php",
-		"oF": 0
-		},
-	"\/category.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/category.php",
-		"oF": 0
-		},
-	"\/comments.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/comments.php",
-		"oF": 0
-		},
 	"\/config.rb": {
-		"ft": 131072,
+		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
-		},
-	"\/css\/ie.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/ie-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/print.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/print-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/screen.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/screen-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/style-ann.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/style-ann-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/style-sumiaos.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/css\/style-sumiaos-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/footer-nodemand.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/footer-nodemand.php",
-		"oF": 0
-		},
-	"\/footer.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/footer.php",
-		"oF": 0
-		},
-	"\/front-page.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/front-page.php",
-		"oF": 0
-		},
-	"\/functions.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/functions.php",
-		"oF": 0
-		},
-	"\/header.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/header.php",
-		"oF": 0
-		},
-	"\/home.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/home.php",
-		"oF": 0
-		},
-	"\/inc\/custom-header.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/inc\/custom-header.php",
-		"oF": 0
-		},
-	"\/inc\/customizer.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/inc\/customizer.php",
-		"oF": 0
-		},
-	"\/inc\/extend-classes.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/inc\/extend-classes.php",
-		"oF": 0
-		},
-	"\/inc\/extras.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/inc\/extras.php",
-		"oF": 0
-		},
-	"\/inc\/jetpack.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/inc\/jetpack.php",
-		"oF": 0
-		},
-	"\/inc\/template-tags.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/inc\/template-tags.php",
-		"oF": 0
-		},
-	"\/index.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/index.php",
-		"oF": 0
-		},
-	"\/js\/customizer.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/customizer-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/jquery.cookie.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/jquery.cookie-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/annuitas-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/js\/min\/min\/annuitas-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/munchkin-login-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/js\/min\/min\/munchkin-login-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/munchkin-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/js\/min\/min\/munchkin-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/navigation-effect-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/js\/min\/min\/navigation-effect-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/navigation-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/js\/min\/min\/navigation-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/post-ajax-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/js\/min\/min\/post-ajax-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/sumiaos-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/min\/sumiaos-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/munchkin-login.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/munchkin-login-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/munchkin.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/munchkin-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/navigation-effect.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/navigation-effect-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/navigation.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/navigation-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/post-ajax.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/post-ajax-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/skip-link-focus-fix.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/skip-link-focus-fix-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/sumiaos-font-try.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/sumiaos-font-try-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/sumiaos.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/sumiaos-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/languages\/annuitas.pot": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/languages\/annuitas.pot",
-		"oF": 0
-		},
-	"\/languages\/readme.txt": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/languages\/readme.txt",
-		"oF": 0
-		},
-	"\/layouts\/content-sidebar.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/layouts\/content-sidebar-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/layouts\/sidebar-content.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/layouts\/sidebar-content-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/page.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/page.php",
-		"oF": 0
-		},
-	"\/partials\/_animation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_animation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/partials\/_blog.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_blog.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
 		},
 	"\/partials\/_custom_mixins.scss": {
 		"aP": 0,
@@ -750,137 +179,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_custom_mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/partials\/_fonts.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_fonts.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/partials\/_footer.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_footer.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/partials\/_forms.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_forms.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/partials\/_header.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_header.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/partials\/_links.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_links.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/partials\/_main.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_main.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/partials\/_navigation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_navigation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/partials\/_one-col.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_one-col.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/partials\/_resource-library.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_resource-library.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/partials\/_sub-page.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_sub-page.css",
+		"oAP": "\/_css\/_custom_mixins.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -893,132 +192,15 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_variables.css",
+		"oAP": "\/_css\/_variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/partials\/_widgets.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_widgets.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/README.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/readme.txt": {
+	"\/sumiaos-menus.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/readme.txt",
-		"oF": 0
-		},
-	"\/rtl.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/rtl-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/screenshot.png": {
-		"ft": 32768,
-		"iS": 264,
-		"oA": 0,
-		"oAP": "\/screenshot.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/search.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/search.php",
-		"oF": 0
-		},
-	"\/sidebar.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/sidebar.php",
-		"oF": 0
-		},
-	"\/single-in-the-news.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/single-in-the-news.php",
-		"oF": 0
-		},
-	"\/single.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/single.php",
-		"oF": 0
-		},
-	"\/style-min.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/style-min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/style.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/style-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/tag.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/tag.php",
-		"oF": 0
-		},
-	"\/template-parts\/content-none.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/template-parts\/content-none.php",
-		"oF": 0
-		},
-	"\/template-parts\/content-page.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/template-parts\/content-page.php",
-		"oF": 0
-		},
-	"\/template-parts\/content.php": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/template-parts\/content.php",
+		"oAP": "\/sumiaos-menus.php",
 		"oF": 0
 		}
 	},
@@ -1027,10 +209,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 500831296,
-	"displayValue": "sumiao",
+	"creationDate": 504123284,
+	"displayValue": "sumiao-events",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-gavin"
+	"iconImageName": "meme-ariel"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
